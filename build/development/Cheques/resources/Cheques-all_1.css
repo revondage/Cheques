@@ -312,7 +312,7 @@
 /* W:/mlira/Cheques/ext/packages/core/sass/src/list/TreeItem.scss:175 */
 .x-treelist-item-icon,
 .x-treelist-item-tool {
-    color: #5fa2dd;
+    color: #001f3f;
     font-size: 16px;
     width: 16px;
 }
@@ -322,7 +322,7 @@
 }
 /* W:/mlira/Cheques/ext/packages/core/sass/src/list/TreeItem.scss:198 */
 .x-treelist-item-expander {
-    color: #5fa2dd;
+    color: #001f3f;
     font-size: 16px;
     width: 18px;
 }
@@ -398,7 +398,7 @@
 }
 /* W:/mlira/Cheques/ext/packages/core/sass/src/list/TreeItem.scss:329 */
 &.x-treelist-highlight-path .x-treelist-item-over > * > .x-treelist-item-icon {
-    color: #5fa2dd;
+    color: #001f3f;
     transition: color 0.5s;
 }
 /* W:/mlira/Cheques/ext/packages/core/sass/src/list/TreeItem.scss:333 */
@@ -408,16 +408,16 @@
 }
 /* W:/mlira/Cheques/ext/packages/core/sass/src/list/TreeItem.scss:337 */
 &.x-treelist-highlight-path .x-treelist-item-over > * > .x-treelist-item-expander {
-    color: #5fa2dd;
+    color: #001f3f;
     transition: color 0.5s;
 }
 /* W:/mlira/Cheques/ext/packages/core/sass/src/list/TreeItem.scss:344 */
 .x-treelist-row-over {
-    background-color: #eaeff4;
+    background-color: #e2e5e7;
 }
 /* W:/mlira/Cheques/ext/packages/core/sass/src/list/TreeItem.scss:347 */
 .x-treelist-row-over > * > .x-treelist-item-icon {
-    color: #5fa2dd;
+    color: #001f3f;
     transition: color 0.5s;
 }
 /* W:/mlira/Cheques/ext/packages/core/sass/src/list/TreeItem.scss:351 */
@@ -427,7 +427,7 @@
 }
 /* W:/mlira/Cheques/ext/packages/core/sass/src/list/TreeItem.scss:355 */
 .x-treelist-row-over > * > .x-treelist-item-expander {
-    color: #5fa2dd;
+    color: #001f3f;
     transition: color 0.5s;
 }
 /* W:/mlira/Cheques/ext/packages/core/sass/src/list/TreeItem.scss:362 */
@@ -1825,7 +1825,7 @@ div.x-form-text-grow .x-form-textarea {
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/src/view/View.scss:1 */
 .x-view-item-focused {
-    outline: 1px dashed #5fa2dd!important;
+    outline: 1px dashed #001f3f!important;
     outline-offset: -1px;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/src/view/BoundList.scss:8 */
@@ -2227,7 +2227,7 @@ div.x-form-text-grow .x-form-textarea {
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/src/grid/column/Action.scss:5 */
 .x-grid-cell-inner-action-col :focus {
-    outline: 1px solid #5fa2dd;
+    outline: 1px solid #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/src/grid/column/Action.scss:10 */
 .x-action-col-icon {
@@ -2241,7 +2241,7 @@ div.x-form-text-grow .x-form-textarea {
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/src/grid/column/Check.scss:5 */
 .x-grid-cell-inner-checkcolumn :focus {
-    outline: 1px solid #5fa2dd;
+    outline: 1px solid #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/src/grid/column/Check.scss:10 */
 .x-grid-checkcolumn {
@@ -2381,7 +2381,7 @@ div.x-form-text-grow .x-form-textarea {
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/src/grid/plugin/RowExpander.scss:7 */
 .x-grid-row-expander:focus {
-    outline: 1px solid #5fa2dd;
+    outline: 1px solid #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/src/grid/plugin/RowExpander.scss:11 */
 .x-grid-hide-row-expander-spacer .x-grid-row-expander-spacer {
@@ -2913,7 +2913,7 @@ body > .x-mask {
 .x-mask.x-focus {
     border-style: solid;
     border-width: 1px;
-    border-color: #5fa2dd;
+    border-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/LoadMask.scss:29 */
 .x-mask-msg {
@@ -2943,12 +2943,12 @@ body > .x-mask {
     background-color: #ececec;
     border-width: 0;
     height: 24px;
-    border-color: #5fa2dd;
+    border-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/ProgressBar.scss:94 */
 .x-progress-default .x-progress-bar-default {
     background-image: none;
-    background-color: #7fb5e4;
+    background-color: #334c65;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/ProgressBar.scss:109 */
 .x-progress-default .x-progress-text {
@@ -2990,11 +2990,11 @@ body > .x-mask {
     padding: 7px 7px 7px 7px;
     border-width: 1px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-btn-default-small-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-btn-default-small {
@@ -3092,7 +3092,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:445 */
 .x-btn-default-small {
-    border-color: #5897ce;
+    border-color: #001d3b;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:452 */
 .x-btn-button-default-small {
@@ -3184,14 +3184,14 @@ body > .x-mask {
     width: 18px;
     content: "\f0d7";
     font: 16px/1 FontAwesome;
-    color: #f0f0f0;
+    color: #fff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:607 */
 .x-btn-wrap-default-small.x-btn-arrow-bottom:after {
     height: 12px;
     content: "\f0d7";
     font: 16px/12px FontAwesome;
-    color: #f0f0f0;
+    color: #fff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:634 */
 .x-btn-wrap-default-small.x-btn-split-right > .x-btn-button {
@@ -3204,14 +3204,14 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:642 */
 .x-btn-wrap-default-small.x-btn-split-right > .x-btn-button:after {
-    border-right: 1px solid #f0f0f0;
+    border-right: 1px solid #fff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:647 */
 .x-btn-wrap-default-small.x-btn-split-right:after {
     width: 20px;
     content: "\f0d7";
     font: 16px/1 FontAwesome;
-    color: #f0f0f0;
+    color: #fff;
     padding-left: 7px;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:663 */
@@ -3225,14 +3225,14 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:675 */
 .x-btn-wrap-default-small.x-btn-split-bottom > .x-btn-button:after {
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #fff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:686 */
 .x-btn-wrap-default-small.x-btn-split-bottom:after {
     height: 20px;
     content: "\f0d7";
     font: 16px/20px FontAwesome;
-    color: #f0f0f0;
+    color: #fff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:719 */
 .x-btn-split-right > .x-btn-icon.x-btn-no-text.x-btn-button-default-small {
@@ -3245,10 +3245,10 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:727 */
 .x-btn-focus.x-btn-default-small {
     background-image: none;
-    background-color: #5fa2dd;
-    -webkit-box-shadow: #d3e0ec 0 1px 0px 0 inset, #d3e0ec 0 -1px 0px 0 inset, #d3e0ec -1px 0 0px 0 inset, #d3e0ec 1px 0 0px 0 inset;
-    -moz-box-shadow: #d3e0ec 0 1px 0px 0 inset, #d3e0ec 0 -1px 0px 0 inset, #d3e0ec -1px 0 0px 0 inset, #d3e0ec 1px 0 0px 0 inset;
-    box-shadow: #d3e0ec 0 1px 0px 0 inset, #d3e0ec 0 -1px 0px 0 inset, #d3e0ec -1px 0 0px 0 inset, #d3e0ec 1px 0 0px 0 inset;
+    background-color: #001f3f;
+    -webkit-box-shadow: #c0c6cd 0 1px 0px 0 inset, #c0c6cd 0 -1px 0px 0 inset, #c0c6cd -1px 0 0px 0 inset, #c0c6cd 1px 0 0px 0 inset;
+    -moz-box-shadow: #c0c6cd 0 1px 0px 0 inset, #c0c6cd 0 -1px 0px 0 inset, #c0c6cd -1px 0 0px 0 inset, #c0c6cd 1px 0 0px 0 inset;
+    box-shadow: #c0c6cd 0 1px 0px 0 inset, #c0c6cd 0 -1px 0px 0 inset, #c0c6cd -1px 0 0px 0 inset, #c0c6cd 1px 0 0px 0 inset;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:762 */
 .x-btn-default-small .x-btn-arrow-el {
@@ -3266,38 +3266,38 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:778 */
 .x-btn-default-small.x-arrow-focus .x-btn-arrow-el {
-    border: 1px solid #d3e0ec;
+    border: 1px solid #c0c6cd;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:785 */
 .x-btn-over.x-btn-default-small {
-    border-color: #518bbd;
+    border-color: #001b36;
     background-image: none;
-    background-color: #5795cb;
+    background-color: #001d3a;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:812 */
 .x-btn-focus.x-btn-over.x-btn-default-small {
-    -webkit-box-shadow: #d1dee9 0 1px 0px 0 inset, #d1dee9 0 -1px 0px 0 inset, #d1dee9 -1px 0 0px 0 inset, #d1dee9 1px 0 0px 0 inset;
-    -moz-box-shadow: #d1dee9 0 1px 0px 0 inset, #d1dee9 0 -1px 0px 0 inset, #d1dee9 -1px 0 0px 0 inset, #d1dee9 1px 0 0px 0 inset;
-    box-shadow: #d1dee9 0 1px 0px 0 inset, #d1dee9 0 -1px 0px 0 inset, #d1dee9 -1px 0 0px 0 inset, #d1dee9 1px 0 0px 0 inset;
+    -webkit-box-shadow: #c0c6cc 0 1px 0px 0 inset, #c0c6cc 0 -1px 0px 0 inset, #c0c6cc -1px 0 0px 0 inset, #c0c6cc 1px 0 0px 0 inset;
+    -moz-box-shadow: #c0c6cc 0 1px 0px 0 inset, #c0c6cc 0 -1px 0px 0 inset, #c0c6cc -1px 0 0px 0 inset, #c0c6cc 1px 0 0px 0 inset;
+    box-shadow: #c0c6cc 0 1px 0px 0 inset, #c0c6cc 0 -1px 0px 0 inset, #c0c6cc -1px 0 0px 0 inset, #c0c6cc 1px 0 0px 0 inset;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:840 */
 .x-btn.x-btn-menu-active.x-btn-default-small,
 .x-btn.x-btn-pressed.x-btn-default-small {
-    border-color: #42719a;
+    border-color: #00162c;
     background-image: none;
-    background-color: #477aa6;
+    background-color: #00172f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:868 */
 .x-btn-focus.x-btn-menu-active.x-btn-default-small,
 .x-btn-focus.x-btn-pressed.x-btn-default-small {
-    -webkit-box-shadow: #ced8e1 0 1px 0px 0 inset, #ced8e1 0 -1px 0px 0 inset, #ced8e1 -1px 0 0px 0 inset, #ced8e1 1px 0 0px 0 inset;
-    -moz-box-shadow: #ced8e1 0 1px 0px 0 inset, #ced8e1 0 -1px 0px 0 inset, #ced8e1 -1px 0 0px 0 inset, #ced8e1 1px 0 0px 0 inset;
-    box-shadow: #ced8e1 0 1px 0px 0 inset, #ced8e1 0 -1px 0px 0 inset, #ced8e1 -1px 0 0px 0 inset, #ced8e1 1px 0 0px 0 inset;
+    -webkit-box-shadow: #c0c5c9 0 1px 0px 0 inset, #c0c5c9 0 -1px 0px 0 inset, #c0c5c9 -1px 0 0px 0 inset, #c0c5c9 1px 0 0px 0 inset;
+    -moz-box-shadow: #c0c5c9 0 1px 0px 0 inset, #c0c5c9 0 -1px 0px 0 inset, #c0c5c9 -1px 0 0px 0 inset, #c0c5c9 1px 0 0px 0 inset;
+    box-shadow: #c0c5c9 0 1px 0px 0 inset, #c0c5c9 0 -1px 0px 0 inset, #c0c5c9 -1px 0 0px 0 inset, #c0c5c9 1px 0 0px 0 inset;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:897 */
 .x-btn.x-btn-disabled.x-btn-default-small {
     background-image: none;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:929 */
 .x-btn-focus .x-btn-default-small-tl,
@@ -3315,7 +3315,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:941 */
 .x-btn-focus .x-btn-default-small-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:953 */
 .x-btn-over .x-btn-default-small-tl,
@@ -3333,7 +3333,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:965 */
 .x-btn-over .x-btn-default-small-mc {
-    background-color: #5795cb;
+    background-color: #001d3a;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:977 */
 .x-btn-focus.x-btn-over .x-btn-default-small-tl,
@@ -3351,7 +3351,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:989 */
 .x-btn-focus.x-btn-over .x-btn-default-small-mc {
-    background-color: #5795cb;
+    background-color: #001d3a;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1003 */
 .x-btn.x-btn-menu-active .x-btn-default-small-tl,
@@ -3378,7 +3378,7 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1015 */
 .x-btn.x-btn-menu-active .x-btn-default-small-mc,
 .x-btn.x-btn-pressed .x-btn-default-small-mc {
-    background-color: #477aa6;
+    background-color: #00172f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1028 */
 .x-btn-focus.x-btn-menu-active .x-btn-default-small-tl,
@@ -3405,7 +3405,7 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1040 */
 .x-btn-focus.x-btn-menu-active .x-btn-default-small-mc,
 .x-btn-focus.x-btn-pressed .x-btn-default-small-mc {
-    background-color: #477aa6;
+    background-color: #00172f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1053 */
 .x-btn.x-btn-disabled .x-btn-default-small-tl,
@@ -3423,7 +3423,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1065 */
 .x-btn.x-btn-disabled .x-btn-default-small-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1075 */
 .x-nbr .x-btn-default-small {
@@ -3516,18 +3516,18 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1190 */
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-default-small:after {
     border-width: 1px;
-    border-color: #d3e0ec;
+    border-color: #c0c6cd;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1204 */
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-over.x-btn-default-small:after {
     border-width: 1px;
-    border-color: #d1dee9;
+    border-color: #c0c6cc;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1219 */
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-menu-active.x-btn-default-small:after,
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-pressed.x-btn-default-small:after {
     border-width: 1px;
-    border-color: #ced8e1;
+    border-color: #c0c5c9;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
 .x-cmd-slicer.x-btn-focus.x-btn-default-small:before {
@@ -3578,11 +3578,11 @@ body > .x-mask {
     padding: 8px 8px 8px 8px;
     border-width: 1px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-btn-default-medium-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-btn-default-medium {
@@ -3680,7 +3680,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:445 */
 .x-btn-default-medium {
-    border-color: #5897ce;
+    border-color: #001d3b;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:452 */
 .x-btn-button-default-medium {
@@ -3772,14 +3772,14 @@ body > .x-mask {
     width: 20px;
     content: "\f0d7";
     font: 20px/1 FontAwesome;
-    color: #f0f0f0;
+    color: #fff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:607 */
 .x-btn-wrap-default-medium.x-btn-arrow-bottom:after {
     height: 14px;
     content: "\f0d7";
     font: 20px/14px FontAwesome;
-    color: #f0f0f0;
+    color: #fff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:634 */
 .x-btn-wrap-default-medium.x-btn-split-right > .x-btn-button {
@@ -3792,14 +3792,14 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:642 */
 .x-btn-wrap-default-medium.x-btn-split-right > .x-btn-button:after {
-    border-right: 1px solid #f0f0f0;
+    border-right: 1px solid #fff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:647 */
 .x-btn-wrap-default-medium.x-btn-split-right:after {
     width: 26px;
     content: "\f0d7";
     font: 20px/1 FontAwesome;
-    color: #f0f0f0;
+    color: #fff;
     padding-left: 8px;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:663 */
@@ -3813,14 +3813,14 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:675 */
 .x-btn-wrap-default-medium.x-btn-split-bottom > .x-btn-button:after {
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #fff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:686 */
 .x-btn-wrap-default-medium.x-btn-split-bottom:after {
     height: 24px;
     content: "\f0d7";
     font: 20px/24px FontAwesome;
-    color: #f0f0f0;
+    color: #fff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:719 */
 .x-btn-split-right > .x-btn-icon.x-btn-no-text.x-btn-button-default-medium {
@@ -3833,10 +3833,10 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:727 */
 .x-btn-focus.x-btn-default-medium {
     background-image: none;
-    background-color: #5fa2dd;
-    -webkit-box-shadow: #d3e0ec 0 1px 0px 0 inset, #d3e0ec 0 -1px 0px 0 inset, #d3e0ec -1px 0 0px 0 inset, #d3e0ec 1px 0 0px 0 inset;
-    -moz-box-shadow: #d3e0ec 0 1px 0px 0 inset, #d3e0ec 0 -1px 0px 0 inset, #d3e0ec -1px 0 0px 0 inset, #d3e0ec 1px 0 0px 0 inset;
-    box-shadow: #d3e0ec 0 1px 0px 0 inset, #d3e0ec 0 -1px 0px 0 inset, #d3e0ec -1px 0 0px 0 inset, #d3e0ec 1px 0 0px 0 inset;
+    background-color: #001f3f;
+    -webkit-box-shadow: #c0c6cd 0 1px 0px 0 inset, #c0c6cd 0 -1px 0px 0 inset, #c0c6cd -1px 0 0px 0 inset, #c0c6cd 1px 0 0px 0 inset;
+    -moz-box-shadow: #c0c6cd 0 1px 0px 0 inset, #c0c6cd 0 -1px 0px 0 inset, #c0c6cd -1px 0 0px 0 inset, #c0c6cd 1px 0 0px 0 inset;
+    box-shadow: #c0c6cd 0 1px 0px 0 inset, #c0c6cd 0 -1px 0px 0 inset, #c0c6cd -1px 0 0px 0 inset, #c0c6cd 1px 0 0px 0 inset;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:762 */
 .x-btn-default-medium .x-btn-arrow-el {
@@ -3854,38 +3854,38 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:778 */
 .x-btn-default-medium.x-arrow-focus .x-btn-arrow-el {
-    border: 1px solid #d3e0ec;
+    border: 1px solid #c0c6cd;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:785 */
 .x-btn-over.x-btn-default-medium {
-    border-color: #518bbd;
+    border-color: #001b36;
     background-image: none;
-    background-color: #5795cb;
+    background-color: #001d3a;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:812 */
 .x-btn-focus.x-btn-over.x-btn-default-medium {
-    -webkit-box-shadow: #d1dee9 0 1px 0px 0 inset, #d1dee9 0 -1px 0px 0 inset, #d1dee9 -1px 0 0px 0 inset, #d1dee9 1px 0 0px 0 inset;
-    -moz-box-shadow: #d1dee9 0 1px 0px 0 inset, #d1dee9 0 -1px 0px 0 inset, #d1dee9 -1px 0 0px 0 inset, #d1dee9 1px 0 0px 0 inset;
-    box-shadow: #d1dee9 0 1px 0px 0 inset, #d1dee9 0 -1px 0px 0 inset, #d1dee9 -1px 0 0px 0 inset, #d1dee9 1px 0 0px 0 inset;
+    -webkit-box-shadow: #c0c6cc 0 1px 0px 0 inset, #c0c6cc 0 -1px 0px 0 inset, #c0c6cc -1px 0 0px 0 inset, #c0c6cc 1px 0 0px 0 inset;
+    -moz-box-shadow: #c0c6cc 0 1px 0px 0 inset, #c0c6cc 0 -1px 0px 0 inset, #c0c6cc -1px 0 0px 0 inset, #c0c6cc 1px 0 0px 0 inset;
+    box-shadow: #c0c6cc 0 1px 0px 0 inset, #c0c6cc 0 -1px 0px 0 inset, #c0c6cc -1px 0 0px 0 inset, #c0c6cc 1px 0 0px 0 inset;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:840 */
 .x-btn.x-btn-menu-active.x-btn-default-medium,
 .x-btn.x-btn-pressed.x-btn-default-medium {
-    border-color: #42719a;
+    border-color: #00162c;
     background-image: none;
-    background-color: #477aa6;
+    background-color: #00172f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:868 */
 .x-btn-focus.x-btn-menu-active.x-btn-default-medium,
 .x-btn-focus.x-btn-pressed.x-btn-default-medium {
-    -webkit-box-shadow: #ced8e1 0 1px 0px 0 inset, #ced8e1 0 -1px 0px 0 inset, #ced8e1 -1px 0 0px 0 inset, #ced8e1 1px 0 0px 0 inset;
-    -moz-box-shadow: #ced8e1 0 1px 0px 0 inset, #ced8e1 0 -1px 0px 0 inset, #ced8e1 -1px 0 0px 0 inset, #ced8e1 1px 0 0px 0 inset;
-    box-shadow: #ced8e1 0 1px 0px 0 inset, #ced8e1 0 -1px 0px 0 inset, #ced8e1 -1px 0 0px 0 inset, #ced8e1 1px 0 0px 0 inset;
+    -webkit-box-shadow: #c0c5c9 0 1px 0px 0 inset, #c0c5c9 0 -1px 0px 0 inset, #c0c5c9 -1px 0 0px 0 inset, #c0c5c9 1px 0 0px 0 inset;
+    -moz-box-shadow: #c0c5c9 0 1px 0px 0 inset, #c0c5c9 0 -1px 0px 0 inset, #c0c5c9 -1px 0 0px 0 inset, #c0c5c9 1px 0 0px 0 inset;
+    box-shadow: #c0c5c9 0 1px 0px 0 inset, #c0c5c9 0 -1px 0px 0 inset, #c0c5c9 -1px 0 0px 0 inset, #c0c5c9 1px 0 0px 0 inset;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:897 */
 .x-btn.x-btn-disabled.x-btn-default-medium {
     background-image: none;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:929 */
 .x-btn-focus .x-btn-default-medium-tl,
@@ -3903,7 +3903,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:941 */
 .x-btn-focus .x-btn-default-medium-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:953 */
 .x-btn-over .x-btn-default-medium-tl,
@@ -3921,7 +3921,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:965 */
 .x-btn-over .x-btn-default-medium-mc {
-    background-color: #5795cb;
+    background-color: #001d3a;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:977 */
 .x-btn-focus.x-btn-over .x-btn-default-medium-tl,
@@ -3939,7 +3939,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:989 */
 .x-btn-focus.x-btn-over .x-btn-default-medium-mc {
-    background-color: #5795cb;
+    background-color: #001d3a;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1003 */
 .x-btn.x-btn-menu-active .x-btn-default-medium-tl,
@@ -3966,7 +3966,7 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1015 */
 .x-btn.x-btn-menu-active .x-btn-default-medium-mc,
 .x-btn.x-btn-pressed .x-btn-default-medium-mc {
-    background-color: #477aa6;
+    background-color: #00172f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1028 */
 .x-btn-focus.x-btn-menu-active .x-btn-default-medium-tl,
@@ -3993,7 +3993,7 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1040 */
 .x-btn-focus.x-btn-menu-active .x-btn-default-medium-mc,
 .x-btn-focus.x-btn-pressed .x-btn-default-medium-mc {
-    background-color: #477aa6;
+    background-color: #00172f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1053 */
 .x-btn.x-btn-disabled .x-btn-default-medium-tl,
@@ -4011,7 +4011,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1065 */
 .x-btn.x-btn-disabled .x-btn-default-medium-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1075 */
 .x-nbr .x-btn-default-medium {
@@ -4104,18 +4104,18 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1190 */
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-default-medium:after {
     border-width: 1px;
-    border-color: #d3e0ec;
+    border-color: #c0c6cd;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1204 */
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-over.x-btn-default-medium:after {
     border-width: 1px;
-    border-color: #d1dee9;
+    border-color: #c0c6cc;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1219 */
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-menu-active.x-btn-default-medium:after,
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-pressed.x-btn-default-medium:after {
     border-width: 1px;
-    border-color: #ced8e1;
+    border-color: #c0c5c9;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
 .x-cmd-slicer.x-btn-focus.x-btn-default-medium:before {
@@ -4166,11 +4166,11 @@ body > .x-mask {
     padding: 9px 9px 9px 9px;
     border-width: 1px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-btn-default-large-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-btn-default-large {
@@ -4268,7 +4268,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:445 */
 .x-btn-default-large {
-    border-color: #5897ce;
+    border-color: #001d3b;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:452 */
 .x-btn-button-default-large {
@@ -4360,14 +4360,14 @@ body > .x-mask {
     width: 22px;
     content: "\f0d7";
     font: 24px/1 FontAwesome;
-    color: #f0f0f0;
+    color: #fff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:607 */
 .x-btn-wrap-default-large.x-btn-arrow-bottom:after {
     height: 16px;
     content: "\f0d7";
     font: 24px/16px FontAwesome;
-    color: #f0f0f0;
+    color: #fff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:634 */
 .x-btn-wrap-default-large.x-btn-split-right > .x-btn-button {
@@ -4380,14 +4380,14 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:642 */
 .x-btn-wrap-default-large.x-btn-split-right > .x-btn-button:after {
-    border-right: 1px solid #f0f0f0;
+    border-right: 1px solid #fff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:647 */
 .x-btn-wrap-default-large.x-btn-split-right:after {
     width: 32px;
     content: "\f0d7";
     font: 24px/1 FontAwesome;
-    color: #f0f0f0;
+    color: #fff;
     padding-left: 9px;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:663 */
@@ -4401,14 +4401,14 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:675 */
 .x-btn-wrap-default-large.x-btn-split-bottom > .x-btn-button:after {
-    border-bottom: 1px solid #f0f0f0;
+    border-bottom: 1px solid #fff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:686 */
 .x-btn-wrap-default-large.x-btn-split-bottom:after {
     height: 28px;
     content: "\f0d7";
     font: 24px/28px FontAwesome;
-    color: #f0f0f0;
+    color: #fff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:719 */
 .x-btn-split-right > .x-btn-icon.x-btn-no-text.x-btn-button-default-large {
@@ -4421,10 +4421,10 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:727 */
 .x-btn-focus.x-btn-default-large {
     background-image: none;
-    background-color: #5fa2dd;
-    -webkit-box-shadow: #d3e0ec 0 1px 0px 0 inset, #d3e0ec 0 -1px 0px 0 inset, #d3e0ec -1px 0 0px 0 inset, #d3e0ec 1px 0 0px 0 inset;
-    -moz-box-shadow: #d3e0ec 0 1px 0px 0 inset, #d3e0ec 0 -1px 0px 0 inset, #d3e0ec -1px 0 0px 0 inset, #d3e0ec 1px 0 0px 0 inset;
-    box-shadow: #d3e0ec 0 1px 0px 0 inset, #d3e0ec 0 -1px 0px 0 inset, #d3e0ec -1px 0 0px 0 inset, #d3e0ec 1px 0 0px 0 inset;
+    background-color: #001f3f;
+    -webkit-box-shadow: #c0c6cd 0 1px 0px 0 inset, #c0c6cd 0 -1px 0px 0 inset, #c0c6cd -1px 0 0px 0 inset, #c0c6cd 1px 0 0px 0 inset;
+    -moz-box-shadow: #c0c6cd 0 1px 0px 0 inset, #c0c6cd 0 -1px 0px 0 inset, #c0c6cd -1px 0 0px 0 inset, #c0c6cd 1px 0 0px 0 inset;
+    box-shadow: #c0c6cd 0 1px 0px 0 inset, #c0c6cd 0 -1px 0px 0 inset, #c0c6cd -1px 0 0px 0 inset, #c0c6cd 1px 0 0px 0 inset;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:762 */
 .x-btn-default-large .x-btn-arrow-el {
@@ -4442,38 +4442,38 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:778 */
 .x-btn-default-large.x-arrow-focus .x-btn-arrow-el {
-    border: 1px solid #d3e0ec;
+    border: 1px solid #c0c6cd;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:785 */
 .x-btn-over.x-btn-default-large {
-    border-color: #518bbd;
+    border-color: #001b36;
     background-image: none;
-    background-color: #5795cb;
+    background-color: #001d3a;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:812 */
 .x-btn-focus.x-btn-over.x-btn-default-large {
-    -webkit-box-shadow: #d1dee9 0 1px 0px 0 inset, #d1dee9 0 -1px 0px 0 inset, #d1dee9 -1px 0 0px 0 inset, #d1dee9 1px 0 0px 0 inset;
-    -moz-box-shadow: #d1dee9 0 1px 0px 0 inset, #d1dee9 0 -1px 0px 0 inset, #d1dee9 -1px 0 0px 0 inset, #d1dee9 1px 0 0px 0 inset;
-    box-shadow: #d1dee9 0 1px 0px 0 inset, #d1dee9 0 -1px 0px 0 inset, #d1dee9 -1px 0 0px 0 inset, #d1dee9 1px 0 0px 0 inset;
+    -webkit-box-shadow: #c0c6cc 0 1px 0px 0 inset, #c0c6cc 0 -1px 0px 0 inset, #c0c6cc -1px 0 0px 0 inset, #c0c6cc 1px 0 0px 0 inset;
+    -moz-box-shadow: #c0c6cc 0 1px 0px 0 inset, #c0c6cc 0 -1px 0px 0 inset, #c0c6cc -1px 0 0px 0 inset, #c0c6cc 1px 0 0px 0 inset;
+    box-shadow: #c0c6cc 0 1px 0px 0 inset, #c0c6cc 0 -1px 0px 0 inset, #c0c6cc -1px 0 0px 0 inset, #c0c6cc 1px 0 0px 0 inset;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:840 */
 .x-btn.x-btn-menu-active.x-btn-default-large,
 .x-btn.x-btn-pressed.x-btn-default-large {
-    border-color: #42719a;
+    border-color: #00162c;
     background-image: none;
-    background-color: #477aa6;
+    background-color: #00172f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:868 */
 .x-btn-focus.x-btn-menu-active.x-btn-default-large,
 .x-btn-focus.x-btn-pressed.x-btn-default-large {
-    -webkit-box-shadow: #ced8e1 0 1px 0px 0 inset, #ced8e1 0 -1px 0px 0 inset, #ced8e1 -1px 0 0px 0 inset, #ced8e1 1px 0 0px 0 inset;
-    -moz-box-shadow: #ced8e1 0 1px 0px 0 inset, #ced8e1 0 -1px 0px 0 inset, #ced8e1 -1px 0 0px 0 inset, #ced8e1 1px 0 0px 0 inset;
-    box-shadow: #ced8e1 0 1px 0px 0 inset, #ced8e1 0 -1px 0px 0 inset, #ced8e1 -1px 0 0px 0 inset, #ced8e1 1px 0 0px 0 inset;
+    -webkit-box-shadow: #c0c5c9 0 1px 0px 0 inset, #c0c5c9 0 -1px 0px 0 inset, #c0c5c9 -1px 0 0px 0 inset, #c0c5c9 1px 0 0px 0 inset;
+    -moz-box-shadow: #c0c5c9 0 1px 0px 0 inset, #c0c5c9 0 -1px 0px 0 inset, #c0c5c9 -1px 0 0px 0 inset, #c0c5c9 1px 0 0px 0 inset;
+    box-shadow: #c0c5c9 0 1px 0px 0 inset, #c0c5c9 0 -1px 0px 0 inset, #c0c5c9 -1px 0 0px 0 inset, #c0c5c9 1px 0 0px 0 inset;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:897 */
 .x-btn.x-btn-disabled.x-btn-default-large {
     background-image: none;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:929 */
 .x-btn-focus .x-btn-default-large-tl,
@@ -4491,7 +4491,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:941 */
 .x-btn-focus .x-btn-default-large-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:953 */
 .x-btn-over .x-btn-default-large-tl,
@@ -4509,7 +4509,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:965 */
 .x-btn-over .x-btn-default-large-mc {
-    background-color: #5795cb;
+    background-color: #001d3a;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:977 */
 .x-btn-focus.x-btn-over .x-btn-default-large-tl,
@@ -4527,7 +4527,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:989 */
 .x-btn-focus.x-btn-over .x-btn-default-large-mc {
-    background-color: #5795cb;
+    background-color: #001d3a;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1003 */
 .x-btn.x-btn-menu-active .x-btn-default-large-tl,
@@ -4554,7 +4554,7 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1015 */
 .x-btn.x-btn-menu-active .x-btn-default-large-mc,
 .x-btn.x-btn-pressed .x-btn-default-large-mc {
-    background-color: #477aa6;
+    background-color: #00172f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1028 */
 .x-btn-focus.x-btn-menu-active .x-btn-default-large-tl,
@@ -4581,7 +4581,7 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1040 */
 .x-btn-focus.x-btn-menu-active .x-btn-default-large-mc,
 .x-btn-focus.x-btn-pressed .x-btn-default-large-mc {
-    background-color: #477aa6;
+    background-color: #00172f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1053 */
 .x-btn.x-btn-disabled .x-btn-default-large-tl,
@@ -4599,7 +4599,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1065 */
 .x-btn.x-btn-disabled .x-btn-default-large-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1075 */
 .x-nbr .x-btn-default-large {
@@ -4692,18 +4692,18 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1190 */
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-default-large:after {
     border-width: 1px;
-    border-color: #d3e0ec;
+    border-color: #c0c6cd;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1204 */
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-over.x-btn-default-large:after {
     border-width: 1px;
-    border-color: #d1dee9;
+    border-color: #c0c6cc;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1219 */
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-menu-active.x-btn-default-large:after,
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-pressed.x-btn-default-large:after {
     border-width: 1px;
-    border-color: #ced8e1;
+    border-color: #c0c5c9;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
 .x-cmd-slicer.x-btn-focus.x-btn-default-large:before {
@@ -5010,9 +5010,9 @@ body > .x-mask {
 .x-btn-focus.x-btn-default-toolbar-small {
     background-image: none;
     background-color: #f6f6f6;
-    -webkit-box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
-    -moz-box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
-    box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
+    -webkit-box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
+    -moz-box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
+    box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:762 */
 .x-btn-default-toolbar-small .x-btn-arrow-el {
@@ -5030,7 +5030,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:778 */
 .x-btn-default-toolbar-small.x-arrow-focus .x-btn-arrow-el {
-    border: 1px solid #5fa2dd;
+    border: 1px solid #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:785 */
 .x-btn-over.x-btn-default-toolbar-small {
@@ -5040,9 +5040,9 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:812 */
 .x-btn-focus.x-btn-over.x-btn-default-toolbar-small {
-    -webkit-box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
-    -moz-box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
-    box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
+    -webkit-box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
+    -moz-box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
+    box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:840 */
 .x-btn.x-btn-menu-active.x-btn-default-toolbar-small,
@@ -5054,9 +5054,9 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:868 */
 .x-btn-focus.x-btn-menu-active.x-btn-default-toolbar-small,
 .x-btn-focus.x-btn-pressed.x-btn-default-toolbar-small {
-    -webkit-box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
-    -moz-box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
-    box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
+    -webkit-box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
+    -moz-box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
+    box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:897 */
 .x-btn.x-btn-disabled.x-btn-default-toolbar-small {
@@ -5280,18 +5280,18 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1190 */
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-default-toolbar-small:after {
     border-width: 1px;
-    border-color: #5fa2dd;
+    border-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1204 */
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-over.x-btn-default-toolbar-small:after {
     border-width: 1px;
-    border-color: #5fa2dd;
+    border-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1219 */
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-menu-active.x-btn-default-toolbar-small:after,
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-pressed.x-btn-default-toolbar-small:after {
     border-width: 1px;
-    border-color: #5fa2dd;
+    border-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
 .x-cmd-slicer.x-btn-focus.x-btn-default-toolbar-small:before {
@@ -5598,9 +5598,9 @@ body > .x-mask {
 .x-btn-focus.x-btn-default-toolbar-medium {
     background-image: none;
     background-color: #f6f6f6;
-    -webkit-box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
-    -moz-box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
-    box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
+    -webkit-box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
+    -moz-box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
+    box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:762 */
 .x-btn-default-toolbar-medium .x-btn-arrow-el {
@@ -5618,7 +5618,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:778 */
 .x-btn-default-toolbar-medium.x-arrow-focus .x-btn-arrow-el {
-    border: 1px solid #5fa2dd;
+    border: 1px solid #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:785 */
 .x-btn-over.x-btn-default-toolbar-medium {
@@ -5628,9 +5628,9 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:812 */
 .x-btn-focus.x-btn-over.x-btn-default-toolbar-medium {
-    -webkit-box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
-    -moz-box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
-    box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
+    -webkit-box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
+    -moz-box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
+    box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:840 */
 .x-btn.x-btn-menu-active.x-btn-default-toolbar-medium,
@@ -5642,9 +5642,9 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:868 */
 .x-btn-focus.x-btn-menu-active.x-btn-default-toolbar-medium,
 .x-btn-focus.x-btn-pressed.x-btn-default-toolbar-medium {
-    -webkit-box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
-    -moz-box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
-    box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
+    -webkit-box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
+    -moz-box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
+    box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:897 */
 .x-btn.x-btn-disabled.x-btn-default-toolbar-medium {
@@ -5868,18 +5868,18 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1190 */
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-default-toolbar-medium:after {
     border-width: 1px;
-    border-color: #5fa2dd;
+    border-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1204 */
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-over.x-btn-default-toolbar-medium:after {
     border-width: 1px;
-    border-color: #5fa2dd;
+    border-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1219 */
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-menu-active.x-btn-default-toolbar-medium:after,
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-pressed.x-btn-default-toolbar-medium:after {
     border-width: 1px;
-    border-color: #5fa2dd;
+    border-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
 .x-cmd-slicer.x-btn-focus.x-btn-default-toolbar-medium:before {
@@ -6186,9 +6186,9 @@ body > .x-mask {
 .x-btn-focus.x-btn-default-toolbar-large {
     background-image: none;
     background-color: #f6f6f6;
-    -webkit-box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
-    -moz-box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
-    box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
+    -webkit-box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
+    -moz-box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
+    box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:762 */
 .x-btn-default-toolbar-large .x-btn-arrow-el {
@@ -6206,7 +6206,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:778 */
 .x-btn-default-toolbar-large.x-arrow-focus .x-btn-arrow-el {
-    border: 1px solid #5fa2dd;
+    border: 1px solid #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:785 */
 .x-btn-over.x-btn-default-toolbar-large {
@@ -6216,9 +6216,9 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:812 */
 .x-btn-focus.x-btn-over.x-btn-default-toolbar-large {
-    -webkit-box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
-    -moz-box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
-    box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
+    -webkit-box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
+    -moz-box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
+    box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:840 */
 .x-btn.x-btn-menu-active.x-btn-default-toolbar-large,
@@ -6230,9 +6230,9 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:868 */
 .x-btn-focus.x-btn-menu-active.x-btn-default-toolbar-large,
 .x-btn-focus.x-btn-pressed.x-btn-default-toolbar-large {
-    -webkit-box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
-    -moz-box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
-    box-shadow: #5fa2dd 0 1px 0px 0 inset, #5fa2dd 0 -1px 0px 0 inset, #5fa2dd -1px 0 0px 0 inset, #5fa2dd 1px 0 0px 0 inset;
+    -webkit-box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
+    -moz-box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
+    box-shadow: #001f3f 0 1px 0px 0 inset, #001f3f 0 -1px 0px 0 inset, #001f3f -1px 0 0px 0 inset, #001f3f 1px 0 0px 0 inset;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:897 */
 .x-btn.x-btn-disabled.x-btn-default-toolbar-large {
@@ -6456,18 +6456,18 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1190 */
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-default-toolbar-large:after {
     border-width: 1px;
-    border-color: #5fa2dd;
+    border-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1204 */
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-over.x-btn-default-toolbar-large:after {
     border-width: 1px;
-    border-color: #5fa2dd;
+    border-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1219 */
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-menu-active.x-btn-default-toolbar-large:after,
 .x-nbr .x-segmented-button-item.x-btn-focus.x-btn-pressed.x-btn-default-toolbar-large:after {
     border-width: 1px;
-    border-color: #5fa2dd;
+    border-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/slicer.scss:83 */
 .x-cmd-slicer.x-btn-focus.x-btn-default-toolbar-large:before {
@@ -7046,7 +7046,7 @@ body > .x-mask {
     right: 1px;
     bottom: 1px;
     left: 1px;
-    border: 1px solid #4c82b1;
+    border: 1px solid #001932;
     pointer-events: none;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/toolbar/Toolbar.scss:232 */
@@ -7119,7 +7119,7 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/toolbar/Toolbar.scss:328 */
 .x-toolbar-text-default {
     padding: 0 4px;
-    color: #4b4c4c;
+    color: #02254a;
     font: 300 13px/16px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/toolbar/Toolbar.scss:334 */
@@ -7310,7 +7310,7 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/toolbar/Toolbar.scss:328 */
 .x-toolbar-text-footer {
     padding: 0 4px;
-    color: #4b4c4c;
+    color: #02254a;
     font: 300 13px/16px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/toolbar/Toolbar.scss:334 */
@@ -7461,17 +7461,17 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/panel/Panel.scss:276 */
 .x-panel-default {
-    border-color: #5fa2dd;
+    border-color: #001f3f;
     padding: 0;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/panel/Panel.scss:282 */
 .x-panel-header-default {
     font-size: 16px;
-    border: 1px solid #5fa2dd;
+    border: 1px solid #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/panel/Panel.scss:289 */
 .x-panel-header-default .x-tool-img {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/panel/Panel.scss:306 */
 .x-panel-header-default-horizontal {
@@ -7529,7 +7529,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/panel/Panel.scss:380 */
 .x-panel-header-title-default {
-    color: #f0f0f0;
+    color: #7fbfff;
     font-size: 16px;
     font-weight: 400;
     font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
@@ -7575,12 +7575,12 @@ body > .x-mask {
     width: 16px;
     height: 16px;
     font-size: 16px;
-    color: #f0f0f0;
+    color: #7fbfff;
     background-position: center center;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/panel/Panel.scss:494 */
 .x-ie8 .x-panel-header-title-default > .x-title-icon-wrap-default > .x-title-icon-default.x-title-glyph {
-    color: #f0f0f0;
+    color: #7fbfff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/panel/Panel.scss:505 */
 .x-panel-body-default {
@@ -7596,17 +7596,17 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/panel/Panel.scss:669 */
 .x-panel-header-default {
     background-image: none;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/panel/Panel.scss:673 */
 .x-panel-header-default-vertical {
     background-image: none;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/panel/Panel.scss:678 */
 .x-rtl.x-panel-header-default-vertical {
     background-image: none;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/panel/Panel.scss:731 */
 .x-panel .x-panel-header-default-collapsed-border-top {
@@ -7711,120 +7711,120 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:2 */
 .x-panel-default-outer-border-l {
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:6 */
 .x-panel-default-outer-border-b {
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:10 */
 .x-panel-default-outer-border-bl {
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:16 */
 .x-panel-default-outer-border-r {
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:20 */
 .x-panel-default-outer-border-rl {
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:26 */
 .x-panel-default-outer-border-rb {
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:32 */
 .x-panel-default-outer-border-rbl {
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:40 */
 .x-panel-default-outer-border-t {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:44 */
 .x-panel-default-outer-border-tl {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:50 */
 .x-panel-default-outer-border-tb {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:56 */
 .x-panel-default-outer-border-tbl {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:64 */
 .x-panel-default-outer-border-tr {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:70 */
 .x-panel-default-outer-border-trl {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:78 */
 .x-panel-default-outer-border-trb {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:86 */
 .x-panel-default-outer-border-trbl {
-    border-color: #5fa2dd !important;
+    border-color: #001f3f !important;
     border-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/panel/Panel.scss:276 */
 .x-panel-default-framed {
-    border-color: #5fa2dd;
+    border-color: #001f3f;
     padding: 0;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/panel/Panel.scss:282 */
 .x-panel-header-default-framed {
     font-size: 16px;
-    border: 2px solid #5fa2dd;
+    border: 2px solid #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/panel/Panel.scss:289 */
 .x-panel-header-default-framed .x-tool-img {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/panel/Panel.scss:306 */
 .x-panel-header-default-framed-horizontal {
@@ -7882,7 +7882,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/panel/Panel.scss:380 */
 .x-panel-header-title-default-framed {
-    color: #f0f0f0;
+    color: #7fbfff;
     font-size: 16px;
     font-weight: 400;
     font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
@@ -7928,12 +7928,12 @@ body > .x-mask {
     width: 16px;
     height: 16px;
     font-size: 16px;
-    color: #f0f0f0;
+    color: #7fbfff;
     background-position: center center;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/panel/Panel.scss:494 */
 .x-ie8 .x-panel-header-title-default-framed > .x-title-icon-wrap-default-framed > .x-title-icon-default-framed.x-title-glyph {
-    color: #f0f0f0;
+    color: #7fbfff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/panel/Panel.scss:505 */
 .x-panel-body-default-framed {
@@ -8080,11 +8080,11 @@ body > .x-mask {
     padding: 10px 14px 10px 14px;
     border-width: 2px 2px 0 2px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-panel-header-default-framed-top-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-panel-header-default-framed-top {
@@ -8197,16 +8197,16 @@ body > .x-mask {
     padding: 14px 10px 14px 10px;
     border-width: 2px 2px 2px 0;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:226 */
 .x-rtl.x-panel-header-default-framed-right {
     background-image: none;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-panel-header-default-framed-right-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-panel-header-default-framed-right {
@@ -8328,11 +8328,11 @@ body > .x-mask {
     padding: 10px 14px 10px 14px;
     border-width: 0 2px 2px 2px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-panel-header-default-framed-bottom-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-panel-header-default-framed-bottom {
@@ -8445,16 +8445,16 @@ body > .x-mask {
     padding: 14px 10px 14px 10px;
     border-width: 2px 0 2px 2px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:226 */
 .x-rtl.x-panel-header-default-framed-left {
     background-image: none;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-panel-header-default-framed-left-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-panel-header-default-framed-left {
@@ -8576,11 +8576,11 @@ body > .x-mask {
     padding: 10px 14px 10px 14px;
     border-width: 2px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-panel-header-default-framed-collapsed-top-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-panel-header-default-framed-collapsed-top {
@@ -8693,16 +8693,16 @@ body > .x-mask {
     padding: 14px 10px 14px 10px;
     border-width: 2px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:226 */
 .x-rtl.x-panel-header-default-framed-collapsed-right {
     background-image: none;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-panel-header-default-framed-collapsed-right-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-panel-header-default-framed-collapsed-right {
@@ -8824,11 +8824,11 @@ body > .x-mask {
     padding: 10px 14px 10px 14px;
     border-width: 2px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-panel-header-default-framed-collapsed-bottom-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-panel-header-default-framed-collapsed-bottom {
@@ -8941,16 +8941,16 @@ body > .x-mask {
     padding: 14px 10px 14px 10px;
     border-width: 2px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:226 */
 .x-rtl.x-panel-header-default-framed-collapsed-left {
     background-image: none;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-panel-header-default-framed-collapsed-left-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-panel-header-default-framed-collapsed-left {
@@ -9154,105 +9154,105 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:2 */
 .x-panel-default-framed-outer-border-l {
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:6 */
 .x-panel-default-framed-outer-border-b {
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:10 */
 .x-panel-default-framed-outer-border-bl {
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:16 */
 .x-panel-default-framed-outer-border-r {
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:20 */
 .x-panel-default-framed-outer-border-rl {
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:26 */
 .x-panel-default-framed-outer-border-rb {
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:32 */
 .x-panel-default-framed-outer-border-rbl {
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:40 */
 .x-panel-default-framed-outer-border-t {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:44 */
 .x-panel-default-framed-outer-border-tl {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:50 */
 .x-panel-default-framed-outer-border-tb {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:56 */
 .x-panel-default-framed-outer-border-tbl {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:64 */
 .x-panel-default-framed-outer-border-tr {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:70 */
 .x-panel-default-framed-outer-border-trl {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:78 */
 .x-panel-default-framed-outer-border-trb {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:86 */
 .x-panel-default-framed-outer-border-trbl {
-    border-color: #5fa2dd !important;
+    border-color: #001f3f !important;
     border-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/container/ButtonGroup.scss:101 */
@@ -9587,7 +9587,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/window/Window.scss:228 */
 .x-window-default {
-    border-color: #5fa2dd;
+    border-color: #001f3f;
     -webkit-border-radius: 0 0 0 0;
     -moz-border-radius: 0 0 0 0;
     -ms-border-radius: 0 0 0 0;
@@ -9713,7 +9713,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/window/Window.scss:250 */
 .x-window-body-default {
-    border-color: #5fa2dd;
+    border-color: #001f3f;
     border-width: 1px;
     border-style: solid;
     background: #fff;
@@ -9725,12 +9725,12 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/window/Window.scss:264 */
 .x-window-header-default {
     font-size: 16px;
-    border-color: #5fa2dd;
-    background-color: #5fa2dd;
+    border-color: #001f3f;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/window/Window.scss:269 */
 .x-window-header-default .x-tool-img {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/window/Window.scss:282 */
 .x-window-header-default-horizontal .x-window-header-default-tab-bar {
@@ -9749,7 +9749,7 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/window/Window.scss:305 */
 .x-window-header-title-default {
-    color: #f0f0f0;
+    color: #7fbfff;
     font-size: 16px;
     font-weight: 400;
     font-family: 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
@@ -9795,12 +9795,12 @@ body > .x-mask {
     width: 16px;
     height: 16px;
     font-size: 16px;
-    color: #f0f0f0;
+    color: #7fbfff;
     background-position: center center;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/window/Window.scss:415 */
 .x-ie8 .x-window-header-title-default > .x-title-icon-wrap-default > .x-title-icon-default.x-title-glyph {
-    color: #f0f0f0;
+    color: #7fbfff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:187 */
 .x-window-header-default-top {
@@ -9819,11 +9819,11 @@ body > .x-mask {
     padding: 10px 14px 10px 14px;
     border-width: 2px 2px 2px 2px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-window-header-default-top-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-window-header-default-top {
@@ -9936,11 +9936,11 @@ body > .x-mask {
     padding: 14px 10px 14px 10px;
     border-width: 2px 2px 2px 2px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-window-header-default-right-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-window-header-default-right {
@@ -10062,11 +10062,11 @@ body > .x-mask {
     padding: 10px 14px 10px 14px;
     border-width: 2px 2px 2px 2px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-window-header-default-bottom-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-window-header-default-bottom {
@@ -10179,11 +10179,11 @@ body > .x-mask {
     padding: 14px 10px 14px 10px;
     border-width: 2px 2px 2px 2px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-window-header-default-left-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-window-header-default-left {
@@ -10305,11 +10305,11 @@ body > .x-mask {
     padding: 10px 14px 10px 14px;
     border-width: 2px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-window-header-default-collapsed-top-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-window-header-default-collapsed-top {
@@ -10422,11 +10422,11 @@ body > .x-mask {
     padding: 14px 10px 14px 10px;
     border-width: 2px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-window-header-default-collapsed-right-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-window-header-default-collapsed-right {
@@ -10548,11 +10548,11 @@ body > .x-mask {
     padding: 10px 14px 10px 14px;
     border-width: 2px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-window-header-default-collapsed-bottom-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-window-header-default-collapsed-bottom {
@@ -10665,11 +10665,11 @@ body > .x-mask {
     padding: 14px 10px 14px 10px;
     border-width: 2px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-window-header-default-collapsed-left-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-window-header-default-collapsed-left {
@@ -10778,20 +10778,20 @@ body > .x-mask {
 .x-window-header-default .x-window-header-icon {
     width: 16px;
     height: 16px;
-    color: #f0f0f0;
+    color: #7fbfff;
     font-size: 16px;
     line-height: 16px;
     background-position: center center;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/window/Window.scss:549 */
 .x-window-header-default .x-window-header-glyph {
-    color: #f0f0f0;
+    color: #7fbfff;
     font-size: 16px;
     line-height: 16px;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/window/Window.scss:566 */
 .x-ie8 .x-window-header-default .x-window-header-glyph {
-    color: #f0f0f0;
+    color: #7fbfff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/window/Window.scss:575 */
 .x-window-header-default-horizontal .x-tool-after-title {
@@ -10855,105 +10855,105 @@ body > .x-mask {
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:2 */
 .x-window-default-outer-border-l {
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:6 */
 .x-window-default-outer-border-b {
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:10 */
 .x-window-default-outer-border-bl {
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:16 */
 .x-window-default-outer-border-r {
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:20 */
 .x-window-default-outer-border-rl {
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:26 */
 .x-window-default-outer-border-rb {
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:32 */
 .x-window-default-outer-border-rbl {
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:40 */
 .x-window-default-outer-border-t {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:44 */
 .x-window-default-outer-border-tl {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:50 */
 .x-window-default-outer-border-tb {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:56 */
 .x-window-default-outer-border-tbl {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:64 */
 .x-window-default-outer-border-tr {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:70 */
 .x-window-default-outer-border-trl {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
-    border-left-color: #5fa2dd !important;
+    border-left-color: #001f3f !important;
     border-left-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:78 */
 .x-window-default-outer-border-trb {
-    border-top-color: #5fa2dd !important;
+    border-top-color: #001f3f !important;
     border-top-width: 1px !important;
-    border-right-color: #5fa2dd !important;
+    border-right-color: #001f3f !important;
     border-right-width: 1px !important;
-    border-bottom-color: #5fa2dd !important;
+    border-bottom-color: #001f3f !important;
     border-bottom-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/border-management.scss:86 */
 .x-window-default-outer-border-trbl {
-    border-color: #5fa2dd !important;
+    border-color: #001f3f !important;
     border-width: 1px !important;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/window/Window.scss:708 */
@@ -11550,14 +11550,14 @@ body > .x-mask {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/view/BoundList.scss:25 */
 .x-boundlist-selected {
     color: #fff;
-    background: #5fa2dd;
-    border-color: #5fa2dd;
+    background: #001f3f;
+    border-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/view/BoundList.scss:33 */
 .x-boundlist-item-over {
     color: #fff;
-    background: #7fb5e4;
-    border-color: #7fb5e4;
+    background: #334c65;
+    border-color: #334c65;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/view/BoundList.scss:42 */
 .x-boundlist-floating {
@@ -11702,11 +11702,11 @@ div.x-datepicker-date:hover {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/picker/Date.scss:181 */
 .x-datepicker-selected {
     border-style: solid;
-    border-color: #7fb5e4;
+    border-color: #334c65;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/picker/Date.scss:184 */
 .x-datepicker-selected div.x-datepicker-date {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
     color: #fff;
     font-weight: 300;
 }
@@ -11714,7 +11714,7 @@ div.x-datepicker-date:hover {
 .x-datepicker-today {
     border-color: darkred;
     border-style: solid;
-    background-color: #bfdaf1;
+    background-color: #99a5b2;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/picker/Date.scss:202 */
 .x-datepicker-prevday .x-datepicker-date,
@@ -11792,10 +11792,10 @@ a.x-monthpicker-item-inner:hover {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/picker/Date.scss:307 */
 .x-monthpicker-item a.x-monthpicker-selected {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
     color: #fff;
     border-style: solid;
-    border-color: #7fb5e4;
+    border-color: #334c65;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/picker/Date.scss:314 */
 .x-monthpicker-yearnav {
@@ -12527,8 +12527,8 @@ a.x-color-picker-item:hover {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/var/form/field/Tag.scss:352 */
 .x-form-text-default .x-tagfield-item.x-tagfield-item-selected {
-    background-color: #7fb5e4;
-    border-color: #7fb5e4;
+    background-color: #334c65;
+    border-color: #334c65;
     color: #fff;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/var/form/field/Tag.scss:361 */
@@ -12605,7 +12605,7 @@ a.x-color-picker-item:hover {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/view/Table.scss:34 */
 .x-grid-item-over {
     color: #404040;
-    background-color: #eaeff4;
+    background-color: #e2e5e7;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/view/Table.scss:41 */
 .x-grid-item-focused {
@@ -12626,7 +12626,7 @@ a.x-color-picker-item:hover {
     bottom: 0px;
     left: 0px;
     pointer-events: none;
-    border: 1px solid #5fa2dd;
+    border: 1px solid #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/view/Table.scss:75 */
 .x-grid-item-selected {
@@ -12646,12 +12646,12 @@ a.x-color-picker-item:hover {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/view/Table.scss:93 */
 .x-grid-with-row-lines .x-grid-item.x-grid-item-over {
     border-style: solid;
-    border-color: #dee3e8;
+    border-color: #d7d9dc;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/view/Table.scss:98 */
 .x-grid-with-row-lines .x-grid-item-over + .x-grid-item {
     border-top-style: solid;
-    border-top-color: #dee3e8;
+    border-top-color: #d7d9dc;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/view/Table.scss:103 */
 .x-grid-with-row-lines .x-grid-item.x-grid-item-selected {
@@ -12721,7 +12721,7 @@ a.x-color-picker-item:hover {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/view/Table.scss:243 */
 .x-grid-with-col-lines .x-grid-item-over .x-grid-cell {
-    border-color: #dee3e8;
+    border-color: #d7d9dc;
     border-style: solid;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/view/Table.scss:248 */
@@ -12865,7 +12865,7 @@ a.x-color-picker-item:hover {
     right: 0px;
     bottom: 0px;
     left: 0px;
-    border: 1px solid #7fb5e4;
+    border: 1px solid #334c65;
     pointer-events: none;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/grid/column/Column.scss:64 */
@@ -12875,7 +12875,7 @@ a.x-color-picker-item:hover {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/grid/column/Column.scss:77 */
 .x-column-header-over {
     background-image: none;
-    background-color: #eaeff4;
+    background-color: #e2e5e7;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/grid/column/Column.scss:81 */
 .x-column-header-sort-ASC,
@@ -12885,11 +12885,11 @@ a.x-color-picker-item:hover {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/grid/column/Column.scss:109 */
 .x-column-header-open {
-    background-color: #eaeff4;
+    background-color: #e2e5e7;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/grid/column/Column.scss:112 */
 .x-column-header-open .x-column-header-trigger {
-    background-color: #dee3e8;
+    background-color: #d7d9dc;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/grid/column/Column.scss:117 */
 .x-column-header-over .x-column-header-trigger,
@@ -13040,11 +13040,11 @@ a.x-color-picker-item:hover {
     padding: 7px 7px 7px 7px;
     border-width: 1px;
     border-style: solid;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-btn-grid-cell-small-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-btn-grid-cell-small {
@@ -13142,7 +13142,7 @@ a.x-color-picker-item:hover {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:445 */
 .x-btn-grid-cell-small {
-    border-color: #5897ce;
+    border-color: #001d3b;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:452 */
 .x-btn-button-grid-cell-small {
@@ -13295,7 +13295,7 @@ a.x-color-picker-item:hover {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:727 */
 .x-btn-focus.x-btn-grid-cell-small {
     background-image: none;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:762 */
 .x-btn-grid-cell-small .x-btn-arrow-el {
@@ -13313,21 +13313,21 @@ a.x-color-picker-item:hover {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:785 */
 .x-btn-over.x-btn-grid-cell-small {
-    border-color: #518bbd;
+    border-color: #001b36;
     background-image: none;
-    background-color: #5795cb;
+    background-color: #001d3a;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:840 */
 .x-btn.x-btn-menu-active.x-btn-grid-cell-small,
 .x-btn.x-btn-pressed.x-btn-grid-cell-small {
-    border-color: #42719a;
+    border-color: #00162c;
     background-image: none;
-    background-color: #477aa6;
+    background-color: #00172f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:897 */
 .x-btn.x-btn-disabled.x-btn-grid-cell-small {
     background-image: none;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:929 */
 .x-btn-focus .x-btn-grid-cell-small-tl,
@@ -13345,7 +13345,7 @@ a.x-color-picker-item:hover {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:941 */
 .x-btn-focus .x-btn-grid-cell-small-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:953 */
 .x-btn-over .x-btn-grid-cell-small-tl,
@@ -13363,7 +13363,7 @@ a.x-color-picker-item:hover {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:965 */
 .x-btn-over .x-btn-grid-cell-small-mc {
-    background-color: #5795cb;
+    background-color: #001d3a;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:977 */
 .x-btn-focus.x-btn-over .x-btn-grid-cell-small-tl,
@@ -13381,7 +13381,7 @@ a.x-color-picker-item:hover {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:989 */
 .x-btn-focus.x-btn-over .x-btn-grid-cell-small-mc {
-    background-color: #5795cb;
+    background-color: #001d3a;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1003 */
 .x-btn.x-btn-menu-active .x-btn-grid-cell-small-tl,
@@ -13408,7 +13408,7 @@ a.x-color-picker-item:hover {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1015 */
 .x-btn.x-btn-menu-active .x-btn-grid-cell-small-mc,
 .x-btn.x-btn-pressed .x-btn-grid-cell-small-mc {
-    background-color: #477aa6;
+    background-color: #00172f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1028 */
 .x-btn-focus.x-btn-menu-active .x-btn-grid-cell-small-tl,
@@ -13435,7 +13435,7 @@ a.x-color-picker-item:hover {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1040 */
 .x-btn-focus.x-btn-menu-active .x-btn-grid-cell-small-mc,
 .x-btn-focus.x-btn-pressed .x-btn-grid-cell-small-mc {
-    background-color: #477aa6;
+    background-color: #00172f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1053 */
 .x-btn.x-btn-disabled .x-btn-grid-cell-small-tl,
@@ -13453,7 +13453,7 @@ a.x-color-picker-item:hover {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1065 */
 .x-btn.x-btn-disabled .x-btn-grid-cell-small-mc {
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/button/Button.scss:1075 */
 .x-nbr .x-btn-grid-cell-small {
@@ -13697,11 +13697,11 @@ a.x-color-picker-item:hover {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/menu/Menu.scss:347 */
 .x-menu-item-default.x-menu-item-active {
     background-image: none;
-    background-color: #7fb5e4;
+    background-color: #334c65;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/menu/Menu.scss:359 */
 .x-nlg .x-menu-item-default.x-menu-item-active {
-    background: #7fb5e4 repeat-x left top;
+    background: #334c65 repeat-x left top;
     background-image: url(images/menu/menu-item-default-active-bg.gif);
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/menu/Menu.scss:366 */
@@ -14091,7 +14091,7 @@ a.x-color-picker-item:hover {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/grid/locking/Lockable.scss:46 */
 .x-rtl.x-grid-inner-locked {
-    border-right-color: #5fa2dd;
+    border-right-color: #001f3f;
     border-left-color: #d0d0d0;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/grid/locking/Lockable.scss:48 */
@@ -14167,7 +14167,7 @@ a.x-color-picker-item:hover {
     border-top: 1px solid #d0d0d0 !important;
     border-bottom: 1px solid #d0d0d0 !important;
     padding: 5px 0 5px 0;
-    background-color: #e5edf4;
+    background-color: #dadee1;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/grid/plugin/RowEditing.scss:60 */
 .x-grid-with-col-lines .x-grid-row-editor .x-form-cb {
@@ -14195,11 +14195,11 @@ a.x-color-picker-item:hover {
     padding: 5px 5px 5px 5px;
     border-width: 0 1px 1px 1px;
     border-style: solid;
-    background-color: #e5edf4;
+    background-color: #dadee1;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-grid-row-editor-buttons-default-bottom-mc {
-    background-color: #e5edf4;
+    background-color: #dadee1;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-grid-row-editor-buttons-default-bottom {
@@ -14312,11 +14312,11 @@ a.x-color-picker-item:hover {
     padding: 5px 5px 5px 5px;
     border-width: 1px 1px 0 1px;
     border-style: solid;
-    background-color: #e5edf4;
+    background-color: #dadee1;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:237 */
 .x-grid-row-editor-buttons-default-top-mc {
-    background-color: #e5edf4;
+    background-color: #dadee1;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/frame.scss:264 */
 .x-nbr .x-grid-row-editor-buttons-default-top {
@@ -14488,11 +14488,11 @@ a.x-color-picker-item:hover {
 .x-ssm-extender-drag-handle {
     height: 7px;
     width: 7px;
-    background-color: #5fa2dd;
+    background-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/grid/selection/SpreadsheetModel.scss:22 */
 .x-ssm-extender-mask {
-    border: 1px dotted #5fa2dd;
+    border: 1px dotted #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/layout/container/Accordion.scss:1 */
 .x-accordion-layout-ct {
@@ -14514,7 +14514,7 @@ a.x-color-picker-item:hover {
 .x-accordion-item .x-accordion-hd {
     background: #ececec;
     border-width: 0;
-    border-color: #5fa2dd;
+    border-color: #001f3f;
     padding: 12px 10px;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/layout/container/Accordion.scss:24 */
@@ -14523,7 +14523,7 @@ a.x-color-picker-item:hover {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/layout/container/Accordion.scss:29 */
 .x-accordion-item .x-accordion-hd-sibling-expanded {
-    border-top-color: #5fa2dd;
+    border-top-color: #001f3f;
     border-top-width: 0;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/layout/container/Accordion.scss:34 */
@@ -14538,7 +14538,7 @@ a.x-color-picker-item:hover {
 .x-accordion-hd .x-tool-img {
     background-image: url(images/tools/tool-sprites-dark.png);
     background-color: #ececec;
-    color: #5fa2dd;
+    color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/layout/container/Accordion.scss:58 */
 .x-accordion-hd .x-tool-collapse-top,
@@ -14833,7 +14833,7 @@ div.x-border-layout-ct {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/selection/CheckboxModel.scss:21 */
 .x-grid-row-checker:focus {
-    outline: 1px solid #5fa2dd;
+    outline: 1px solid #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/selection/CheckboxModel.scss:25 */
 .x-column-header-checkbox .x-column-header-inner {
@@ -14881,7 +14881,7 @@ div.x-border-layout-ct {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/slider/Multi.scss:33 */
 .x-slider-thumb-over {
     background-color: #fcfcfc;
-    border-color: #c8cdd2;
+    border-color: #c0c3c5;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/slider/Multi.scss:36 */
 .x-slider-thumb-over:before {
@@ -14890,11 +14890,11 @@ div.x-border-layout-ct {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/slider/Multi.scss:41 */
 .x-slider-focus .x-slider-thumb {
     background-color: #f6f6f6;
-    border-color: #5fa2dd;
+    border-color: #001f3f;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/slider/Multi.scss:44 */
 .x-slider-focus .x-slider-thumb:before {
-    color: #a6c7e5;
+    color: #768696;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/slider/Multi.scss:49 */
 .x-slider-focus .x-slider-thumb-over {
@@ -14903,7 +14903,7 @@ div.x-border-layout-ct {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/slider/Multi.scss:53 */
 .x-slider-thumb-drag {
     background-color: #f1f1f1;
-    border-color: #c0c8cf;
+    border-color: #b5b8bc;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/slider/Multi.scss:56 */
 .x-slider-thumb-drag:before {
@@ -15628,7 +15628,7 @@ div.x-border-layout-ct {
 .x-tab-focus.x-tab-default {
     border-color: transparent;
     background-color: transparent;
-    outline: 1px solid #5fa2dd;
+    outline: 1px solid #001f3f;
     outline-offset: -3px;
 }
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/css-outline.scss:59 */
@@ -15643,7 +15643,7 @@ div.x-border-layout-ct {
     right: 2px;
     bottom: 2px;
     left: 2px;
-    border: 1px solid #5fa2dd;
+    border: 1px solid #001f3f;
     pointer-events: none;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2314 */
@@ -15715,7 +15715,7 @@ div.x-border-layout-ct {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2637 */
 .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
-    color: #4c82b1;
+    color: #001932;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2642 */
 .x-tab-bar-plain .x-tab.x-tab-active.x-tab-default .x-tab-inner-default {
@@ -15723,11 +15723,11 @@ div.x-border-layout-ct {
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2657 */
 .x-tab.x-tab-active.x-tab-default .x-tab-icon-el {
-    color: #4c82b1;
+    color: #001932;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2665 */
 .x-ie8 .x-tab.x-tab-active.x-tab-default .x-tab-icon-el {
-    color: #82a7c8;
+    color: #4d5e70;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/tab/Tab.scss:2671 */
 .x-tab-bar-plain .x-tab.x-tab-active.x-tab-default .x-tab-icon-el {

@@ -25,6 +25,16 @@ Ext.define('Cheques.view.submenuimprimirChequesViewController', {
 
         Ext.widget('wea').show();
         Window.print();
+    },
+
+    onButtonClick1: function(button, e, eOpts) {
+        // Ext._txtNombre = Ext.getCmp('txtNombre').getValue();
+        // Ext._txtCantidad = Ext.getCmp('txtCantidad').getValue();
+        // Ext._dtFecha = Ext.getCmp('dtFecha').getValue();
+        // Ext._cmbLeyenda = Ext.getCmp('cmbLeyenda').getValue();
+
+        // Ext.widget('wea').show();
+        // Window.print();
     }
 
 });

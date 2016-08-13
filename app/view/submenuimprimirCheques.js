@@ -23,7 +23,8 @@ Ext.define('Cheques.view.submenuimprimirCheques', {
         'Ext.form.Panel',
         'Ext.form.field.Date',
         'Ext.form.field.ComboBox',
-        'Ext.button.Button'
+        'Ext.button.Button',
+        'Ext.toolbar.Spacer'
     ],
 
     controller: 'submenuimprimircheques',
@@ -32,7 +33,7 @@ Ext.define('Cheques.view.submenuimprimirCheques', {
     },
     modal: true,
     draggable: false,
-    height: 379,
+    height: 278,
     resizable: false,
     width: 489,
     title: 'Imprimir Cheques',
@@ -40,6 +41,7 @@ Ext.define('Cheques.view.submenuimprimirCheques', {
     items: [
         {
             xtype: 'form',
+            height: 228,
             bodyPadding: 10,
             items: [
                 {
@@ -93,6 +95,17 @@ Ext.define('Cheques.view.submenuimprimirCheques', {
                             text: 'Imprimir',
                             listeners: {
                                 click: 'onButtonClick'
+                            }
+                        },
+                        {
+                            xtype: 'tbspacer',
+                            width: 20
+                        },
+                        {
+                            xtype: 'button',
+                            text: 'Configurar',
+                            listeners: {
+                                click: 'onButtonClick1'
                             }
                         }
                     ]

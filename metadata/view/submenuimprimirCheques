@@ -10,7 +10,7 @@
         "designer|userAlias": "submenuimprimirCheques",
         "designer|userClassName": "submenuimprimirCheques",
         "draggable": false,
-        "height": 379,
+        "height": 278,
         "id": null,
         "modal": true,
         "resizable": [
@@ -33,6 +33,7 @@
             "codeClass": null,
             "userConfig": {
                 "bodyPadding": 10,
+                "height": 228,
                 "title": null
             },
             "name": "MyForm",
@@ -174,6 +175,59 @@
                                     },
                                     "name": "onButtonClick",
                                     "designerId": "56a3e526-3e14-4797-9c34-4f4b156c0d8b"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "Ext.toolbar.Spacer",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "layout|flex": null,
+                                "width": 20
+                            },
+                            "name": "MySpacer",
+                            "designerId": "438732fe-c045-488f-b735-46657aaf3e9e"
+                        },
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "Configurar"
+                            },
+                            "name": "MyButton2",
+                            "designerId": "21c90e42-761c-46e4-ae26-609b9a8fa86c",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick1",
+                                        "implHandler": [
+                                            "// Ext._txtNombre = Ext.getCmp('txtNombre').getValue();",
+                                            "// Ext._txtCantidad = Ext.getCmp('txtCantidad').getValue();",
+                                            "// Ext._dtFecha = Ext.getCmp('dtFecha').getValue();",
+                                            "// Ext._cmbLeyenda = Ext.getCmp('cmbLeyenda').getValue();",
+                                            "",
+                                            "// Ext.widget('wea').show();",
+                                            "// Window.print();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick1",
+                                    "designerId": "b634a6a1-43b4-4a45-913d-a75ef5e02016"
                                 }
                             ]
                         }

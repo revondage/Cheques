@@ -1,0 +1,112 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoSync": true,
+        "designer|userClassName": "cmbLeyenda",
+        "model": "cmbLeyenda",
+        "storeId": "cmbLeyenda"
+    },
+    "designerId": "314f4e27-d5fe-414e-aa32-5f51196a61ac",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": [
+                    "{read: 'api/Leyendas/read',",
+                    "create: 'api/Leyendas/create',",
+                    "update: 'api/Leyendas/update'}"
+                ]
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "6e3575fd-0155-4137-8e0d-9a4af6e28e20",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "messageProperty": "message",
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "d29bc8bc-05c4-4e07-9036-67dfc5c56ba0"
+                },
+                {
+                    "type": "Ext.data.writer.Json",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "encode": true,
+                        "rootProperty": "data",
+                        "writeAllFields": true
+                    },
+                    "name": "MyJsonWriter",
+                    "designerId": "a0eb0e6e-a78c-44e5-a91a-95efd5863b38"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onAjaxException",
+                        "implHandler": [
+                            "Ext.MessageBox.show({",
+                            "    title: 'Mensaje del Sistema',",
+                            "    msg: operation.getError(),",
+                            "    icon: Ext.MessageBox.info,",
+                            "    buttons: Ext.Msg.OK",
+                            "});"
+                        ],
+                        "name": "exception",
+                        "scope": "me"
+                    },
+                    "name": "onAjaxException",
+                    "designerId": "48e1a801-258e-49e0-bb3f-e1845fa169a0"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onStoreWrite",
+                "implHandler": [
+                    "Ext.MessageBox.show({",
+                    "                        title: \"Mensaje del Sistema\",",
+                    "                        msg: operation.getResultSet().message,",
+                    "                        icon: Ext.MessageBox.info,",
+                    "                        buttons: Ext.Msg.OK",
+                    "                    });",
+                    "store.load();"
+                ],
+                "name": "write",
+                "scope": "me"
+            },
+            "name": "onStoreWrite",
+            "designerId": "56a4bddf-a950-4c13-8f5a-2deb3e46f4e8"
+        }
+    ]
+}

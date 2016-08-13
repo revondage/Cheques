@@ -1,0 +1,185 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyPadding": null,
+        "designer|userAlias": "submenuimprimirCheques",
+        "designer|userClassName": "submenuimprimirCheques",
+        "draggable": false,
+        "height": 379,
+        "id": null,
+        "modal": true,
+        "resizable": [
+            "false"
+        ],
+        "title": "Imprimir Cheques",
+        "width": 489
+    },
+    "name": "MyWindow",
+    "designerId": "f423f555-d10b-4772-b161-0fa6d79c0738",
+    "viewControllerInstanceId": "850fb32e-69e7-4f80-ac97-916a52525322",
+    "viewModelInstanceId": "f8ba3e3a-0658-4dc8-802b-c7edc65c4575",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "title": null
+            },
+            "name": "MyForm",
+            "designerId": "db8623a4-21a0-4b8d-a2ce-c6a409ff659a",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "stretch",
+                        "flex": 1,
+                        "layout": "vbox"
+                    },
+                    "name": "MyContainer",
+                    "designerId": "e25a4027-1953-43d2-a47e-b8d1abb0b4a2",
+                    "cn": [
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Nombre",
+                                "id": "txtNombre",
+                                "name": "txtNombre"
+                            },
+                            "name": "MyTextField",
+                            "designerId": "ddc0937e-903b-497d-9079-a3aa22b27d39"
+                        },
+                        {
+                            "type": "Ext.form.field.Text",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Cantidad",
+                                "id": "txtCantidad",
+                                "name": "txtCantidad"
+                            },
+                            "name": "MyTextField1",
+                            "designerId": "a6592275-c96b-424b-a9a1-f9e6ad500510"
+                        },
+                        {
+                            "type": "Ext.form.field.Date",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "fieldLabel": "Fecha",
+                                "format": "m/\\dia\\d/Y",
+                                "formatText": null,
+                                "id": "dtFecha",
+                                "name": "dtFecha",
+                                "submitFormat": null
+                            },
+                            "name": "MyDateField",
+                            "designerId": "bde2dff7-aca0-4772-9275-1cdc38437731"
+                        },
+                        {
+                            "type": "Ext.form.field.ComboBox",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "displayField": "leyenda",
+                                "fieldLabel": "Leyenda",
+                                "id": "cmbLeyenda",
+                                "name": "cmbLeyenda",
+                                "store": "cmbLeyenda",
+                                "value": null,
+                                "valueField": "leyenda"
+                            },
+                            "name": "MyComboBox",
+                            "designerId": "861e9b8b-339b-4214-8a65-a2384176050a"
+                        }
+                    ]
+                },
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "container|align": "middle",
+                        "container|pack": "center",
+                        "dock": null,
+                        "layout": "hbox"
+                    },
+                    "name": "MyContainer1",
+                    "designerId": "400ada54-45b3-46c0-a781-6cc90729b5b2",
+                    "cn": [
+                        {
+                            "type": "Ext.button.Button",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "text": "Imprimir"
+                            },
+                            "name": "MyButton1",
+                            "designerId": "7d2a94d5-6930-447f-89cb-3e1f36700a5b",
+                            "cn": [
+                                {
+                                    "type": "viewcontrollereventbinding",
+                                    "reference": {
+                                        "name": "listeners",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "fn": "onButtonClick",
+                                        "implHandler": [
+                                            "Ext._txtNombre = Ext.getCmp('txtNombre').getValue();",
+                                            "Ext._txtCantidad = Ext.getCmp('txtCantidad').getValue();",
+                                            "Ext._dtFecha = Ext.getCmp('dtFecha').getValue();",
+                                            "Ext._cmbLeyenda = Ext.getCmp('cmbLeyenda').getValue();",
+                                            "",
+                                            "Ext.widget('wea').show();",
+                                            "Window.print();"
+                                        ],
+                                        "name": "click",
+                                        "scope": "me"
+                                    },
+                                    "name": "onButtonClick",
+                                    "designerId": "56a3e526-3e14-4797-9c34-4f4b156c0d8b"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

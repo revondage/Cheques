@@ -1,0 +1,64 @@
+{
+    "name": "Cheques",
+    "settings": {
+        "cmd": {
+            "license": "commercial",
+            "cmdVersion": "6.1.2.15",
+            "frameworkVersion": "6.0.2.437"
+        },
+        "urlPrefix": "http://localhost:1841/",
+        "canvasControls": {
+            "viewportSize": {
+                "name": "Auto Expand",
+                "builtIn": true,
+                "height": null,
+                "width": null
+            }
+        },
+        "exportPath": "",
+        "spacesToIndent": 4,
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false,
+        "buildShouldOverwriteIndex": true,
+        "generateArchitectVersion": true,
+        "lastBuildSelection": {
+            "value": "webBuild",
+            "display": "Build web app"
+        }
+    },
+    "xdsVersion": "3.5.1",
+    "xdsBuild": 348,
+    "schemaVersion": 1,
+    "upgradeVersion": 310000000001,
+    "framework": "ext60",
+    "viewOrderMap": {
+        "view": [
+            "e657d9d8-53e1-4726-971a-91739d4a72b3",
+            "c1a662cd-8240-4cb0-9000-ab1d9d5ffa4b",
+            "07819d3f-2418-4443-adcd-a38530c7de09",
+            "f423f555-d10b-4772-b161-0fa6d79c0738",
+            "f8ba3e3a-0658-4dc8-802b-c7edc65c4575",
+            "850fb32e-69e7-4f80-ac97-916a52525322",
+            "2e0c92a3-11fe-43f1-9796-310c13eaf2a0",
+            "3e8f2866-ef41-4fe2-a188-7d08c4827c80",
+            "139cb01c-ab3f-4598-a745-562a21b3b8cd"
+        ],
+        "store": [
+            "314f4e27-d5fe-414e-aa32-5f51196a61ac"
+        ],
+        "controller": [],
+        "model": [
+            "e814b31b-c230-4e23-8ecc-d2234563714c"
+        ],
+        "resource": [
+            "34eac662-7249-4534-ad12-d5bc42c4a870",
+            "05a98e6d-4321-441d-87c7-1cacc487deb0",
+            "45214316-3520-4ae2-ad07-c25e6d6d5a0e"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

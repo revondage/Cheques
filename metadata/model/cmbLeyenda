@@ -1,0 +1,41 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "cmbLeyenda"
+    },
+    "name": "MyModel",
+    "designerId": "e814b31b-c230-4e23-8ecc-d2234563714c",
+    "cn": [
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "MyField",
+            "designerId": "fa3142b2-cfbd-40b6-a14d-74280dd5ad06"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "leyenda"
+            },
+            "name": "MyField1",
+            "designerId": "a6d2d41f-a68d-4095-9a4a-07d45dea025a"
+        }
+    ]
+}

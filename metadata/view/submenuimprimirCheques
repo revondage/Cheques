@@ -93,7 +93,7 @@
                             "codeClass": null,
                             "userConfig": {
                                 "fieldLabel": "Fecha",
-                                "format": "m/\\dia\\d/Y",
+                                "format": null,
                                 "formatText": null,
                                 "id": "dtFecha",
                                 "name": "dtFecha",
@@ -165,10 +165,19 @@
                                             "Ext._txtNombre = Ext.getCmp('txtNombre').getValue();",
                                             "Ext._txtCantidad = Ext.getCmp('txtCantidad').getValue();",
                                             "Ext._dtFecha = Ext.getCmp('dtFecha').getValue();",
+                                            "Ext._fechafinal = Ext.Date.format(Ext._dtFecha, \"j F Y\");",
                                             "Ext._cmbLeyenda = Ext.getCmp('cmbLeyenda').getValue();",
                                             "",
-                                            "Ext.widget('wea').show();",
-                                            "Window.print();"
+                                            "// Ext.widget('wea').show();",
+                                            "// Window.print();",
+                                            "",
+                                            "Ext.getCmp(\"panelCheque\").setHtml('<iframe id=\"iframecheque\" name=\"iframecheque\" src=\"api/app/webroot/cheque/imprimircheque.php?nombre='+Ext._txtNombre+",
+                                            "                                       '&cantidad='+Ext._txtCantidad+",
+                                            "                                       '&monto='+Ext._txtCantidad+",
+                                            "                                       '&fecha='+Ext._fechafinal+",
+                                            "                                       '&leyenda='+Ext._cmbLeyenda+'\"></iframe>');",
+                                            "",
+                                            ""
                                         ],
                                         "name": "click",
                                         "scope": "me"
@@ -234,6 +243,22 @@
                     ]
                 }
             ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "panelCheque",
+                "hidden": true,
+                "id": "panelCheque",
+                "title": null
+            },
+            "name": "MyPanel1",
+            "designerId": "1d73187c-3de4-4046-8418-38ec58e5b344"
         }
     ]
 }

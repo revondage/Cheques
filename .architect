@@ -89,6 +89,9 @@
                             ]
                         }
                     ]
+                },
+                {
+                    "id": "1d73187c-3de4-4046-8418-38ec58e5b344"
                 }
             ]
         },
@@ -183,11 +186,11 @@
         ]
     },
     "canvasState": {
-        "topInstance": "f423f555-d10b-4772-b161-0fa6d79c0738"
+        "topInstance": null
     },
     "inspectorState": {
         "topInstance": "f423f555-d10b-4772-b161-0fa6d79c0738",
-        "selectedInstance": "b634a6a1-43b4-4a45-913d-a75ef5e02016"
+        "selectedInstance": "bde2dff7-aca0-4772-9275-1cdc38437731"
     },
     "editMode": "code",
     "userSettings": {

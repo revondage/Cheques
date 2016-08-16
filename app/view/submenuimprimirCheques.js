@@ -68,8 +68,7 @@ Ext.define('Cheques.view.submenuimprimirCheques', {
                             xtype: 'datefield',
                             id: 'dtFecha',
                             fieldLabel: 'Fecha',
-                            name: 'dtFecha',
-                            format: 'm/\dia\d/Y'
+                            name: 'dtFecha'
                         },
                         {
                             xtype: 'combobox',
@@ -111,6 +110,11 @@ Ext.define('Cheques.view.submenuimprimirCheques', {
                     ]
                 }
             ]
+        },
+        {
+            xtype: 'panel',
+            hidden: true,
+            id: 'panelCheque'
         }
     ]
 

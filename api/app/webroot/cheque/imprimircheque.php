@@ -24,14 +24,15 @@ class PDF_AutoPrint extends PDF_JavaScript{
     $this->SetFont('Arial','',8);
     $this->SetXY(229,84);
     $this->Multicell(0,5,$fecha,0,1,'C',true);
-    $this->SetXY(148,88);
-    $this->Multicell(0,5,$leyenda,0,1,'C',true);
     $this->SetXY(125,96);
     $this->Multicell(0,5,$nombre,0,1,'C',true);
     $this->SetXY(250,97);
     $this->Multicell(0,5,$cantidad,0,1,'C',true);
     $this->SetXY(125,104);
     $this->Multicell(0,5,$monto,0,1,'C',true);
+    $this->SetFont('Arial','B ',8);
+    $this->SetXY(148,88);
+    $this->Multicell(0,5,$leyenda,0,1,'C',true);
   }
 
   // function PrintChapter($num, $title, $file){

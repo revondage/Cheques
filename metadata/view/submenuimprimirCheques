@@ -93,7 +93,7 @@
                             "codeClass": null,
                             "userConfig": {
                                 "fieldLabel": "Fecha",
-                                "format": null,
+                                "format": "%A %B Y",
                                 "formatText": null,
                                 "id": "dtFecha",
                                 "name": "dtFecha",

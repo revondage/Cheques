@@ -14,32 +14,29 @@ class PDF_AutoPrint extends PDF_JavaScript{
     $this->SetY(42);
   }
 
-  // function ChapterBody($file){
   function ChapterBody(){
     global $nombre;
     global $fecha;
     global $leyenda;
     global $cantidad;
     global $monto;
-    $this->SetFont('Arial','',8);
-    $this->SetXY(229,84);
-    $this->Multicell(0,5,$fecha,0,1,'C',true);
-    $this->SetXY(125,96);
-    $this->Multicell(0,5,$nombre,0,1,'C',true);
-    $this->SetXY(250,97);
-    $this->Multicell(0,5,$cantidad,0,1,'C',true);
-    $this->SetXY(125,104);
-    $this->Multicell(0,5,$monto,0,1,'C',true);
-    $this->SetFont('Arial','B ',8);
+    $this->SetFont('Arial','B',8);
     $this->SetXY(148,88);
     $this->Multicell(0,5,$leyenda,0,1,'C',true);
+    $this->SetFont('Arial','',8);
+    $this->SetXY(125,96);
+    $this->Multicell(0,5,$nombre,0,1,'C',true);
+    $this->SetXY(125,104);
+    $this->Multicell(0,5,$monto,0,1,'C',true);
+    $this->SetXY(250,97);
+    $this->Multicell(0,5,$cantidad,0,1,'C',true);
+    $this->SetXY(229,84);
+    $this->Multicell(0,5,$fecha,0,1,'C',true);
   }
 
-  // function PrintChapter($num, $title, $file){
-    function PrintChapter($num, $title){
+  function PrintChapter($num, $title){
     $this->AddPage();
     $this->ChapterTitle($num,$title);
-    // $this->ChapterBody($file);
     $this->ChapterBody();
   }
 

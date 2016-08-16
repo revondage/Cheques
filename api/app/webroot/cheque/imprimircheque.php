@@ -14,29 +14,32 @@ class PDF_AutoPrint extends PDF_JavaScript{
     $this->SetY(42);
   }
 
-  function ChapterBody($file){
+  // function ChapterBody($file){
+  function ChapterBody(){
     global $nombre;
     global $fecha;
     global $leyenda;
     global $cantidad;
     global $monto;
     $this->SetFont('Arial','',8);
-    $this->SetXY(42,30);
-    $this->Multicell(0,5,$leyenda,0,1,'C',true);
-    $this->SetXY(15,40);
-    $this->Multicell(0,5,$nombre,0,1,'C',true);
-    $this->SetX(15);
-    $this->Multicell(0,5,$monto,0,1,'C',true);
-    $this->SetXY(160,40);
-    $this->Multicell(0,5,$cantidad,0,1,'C',true);
-    $this->SetXY(140,20);
+    $this->SetXY(229,84);
     $this->Multicell(0,5,$fecha,0,1,'C',true);
+    $this->SetXY(148,88);
+    $this->Multicell(0,5,$leyenda,0,1,'C',true);
+    $this->SetXY(125,96);
+    $this->Multicell(0,5,$nombre,0,1,'C',true);
+    $this->SetXY(250,97);
+    $this->Multicell(0,5,$cantidad,0,1,'C',true);
+    $this->SetXY(125,104);
+    $this->Multicell(0,5,$monto,0,1,'C',true);
   }
 
-  function PrintChapter($num, $title, $file){
+  // function PrintChapter($num, $title, $file){
+    function PrintChapter($num, $title){
     $this->AddPage();
     $this->ChapterTitle($num,$title);
-    $this->ChapterBody($file);
+    // $this->ChapterBody($file);
+    $this->ChapterBody();
   }
 
 
@@ -247,10 +250,11 @@ function subfijo($xx)
 
 
 
-$pdf=new PDF_AutoPrint(); // $pdf = new PDF('P','mm','Letter'); OR // $pdf=new PDF_AutoPrint('P','mm','Letter');
+$pdf=new PDF_AutoPrint('L','mm','Letter'); // $pdf = new PDF('P','mm','Letter'); OR // $pdf=new PDF_AutoPrint('P','mm','Letter');
 $title = 'Ejemplo de Formateo';
 $nombre = utf8_decode(isset($_REQUEST['nombre']) ? $_REQUEST['nombre'] : '');
 $cantidad = utf8_decode(isset($_REQUEST['cantidad']) ? $_REQUEST['cantidad'] : '');
+$cantidad = number_format($cantidad, 2);
 $monto = utf8_decode(isset($_REQUEST['cantidad']) ? numtoletras($_REQUEST['cantidad']) : '');
 $fecha = utf8_decode(isset($_REQUEST['fecha']) ? $_REQUEST['fecha'] : '');
 $leyenda = utf8_decode(isset($_REQUEST['leyenda']) ? $_REQUEST['leyenda'] : '');

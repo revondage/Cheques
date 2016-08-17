@@ -1,6 +1,8 @@
 <?php
-$date = "10/10/2010";
-// setlocale(LC_TIME, 'es_MX.UTF-8');
-$date=strtoupper(strftime("%d de %B de %Y"));
-echo $date;
+$fecha = "02-03-2010";
+setlocale(LC_TIME, 'es_MX.UTF-8');
+$fecha=strtotime($fecha);
+$fecha=strftime("%d de %B de %Y",$fecha);
+$fecha=strtoupper($fecha);
+echo $fecha;
 ?>

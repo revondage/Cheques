@@ -69,7 +69,7 @@ Ext.define('Cheques.view.submenuimprimirCheques', {
                             id: 'dtFecha',
                             fieldLabel: 'Fecha',
                             name: 'dtFecha',
-                            format: '%A %B Y'
+                            format: 'd-m-Y'
                         },
                         {
                             xtype: 'combobox',

@@ -255,6 +255,8 @@ $cantidad = utf8_decode(isset($_REQUEST['cantidad']) ? $_REQUEST['cantidad'] : '
 $cantidad = number_format($cantidad, 2);
 $monto = utf8_decode(isset($_REQUEST['cantidad']) ? numtoletras($_REQUEST['cantidad']) : '');
 $fecha = utf8_decode(isset($_REQUEST['fecha']) ? $_REQUEST['fecha'] : '');
+setlocale(LC_TIME, 'es_MX.UTF-8');
+$fecha=strtoupper(strftime("%d de %B de %Y",strtotime($fecha)));
 $leyenda = utf8_decode(isset($_REQUEST['leyenda']) ? $_REQUEST['leyenda'] : '');
 
 $pdf->SetTitle($title);

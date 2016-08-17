@@ -21,7 +21,7 @@ Ext.define('Cheques.view.submenuimprimirChequesViewController', {
         Ext._txtNombre = Ext.getCmp('txtNombre').getValue();
         Ext._txtCantidad = Ext.getCmp('txtCantidad').getValue();
         Ext._dtFecha = Ext.getCmp('dtFecha').getValue();
-        Ext._fechafinal = Ext.Date.format(Ext._dtFecha, "j F Y");
+        Ext._fechaFinal = Ext.Date.format(Ext._dtFecha, "d-m-Y");
         Ext._cmbLeyenda = Ext.getCmp('cmbLeyenda').getValue();
 
         // Ext.widget('wea').show();
@@ -30,7 +30,7 @@ Ext.define('Cheques.view.submenuimprimirChequesViewController', {
         Ext.getCmp("panelCheque").setHtml('<iframe id="iframecheque" name="iframecheque" src="api/app/webroot/cheque/imprimircheque.php?nombre='+Ext._txtNombre+
         '&cantidad='+Ext._txtCantidad+
         '&monto='+Ext._txtCantidad+
-        '&fecha='+Ext._fechafinal+
+        '&fecha='+Ext._fechaFinal+
         '&leyenda='+Ext._cmbLeyenda+'"></iframe>');
 
 

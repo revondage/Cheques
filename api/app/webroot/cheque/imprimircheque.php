@@ -1,5 +1,4 @@
 <?php
-// require('fpdf/fpdf.php');
 require('fpdf/pdf_js.php');
 
 
@@ -60,12 +59,8 @@ class PDF_AutoPrint extends PDF_JavaScript{
     $this->IncludeJS($script);
   }
 }
+
 //------------------------------------------------------------------------------
-
-
-
-
-
 
 function numtoletras($xcifra)
 {
@@ -101,48 +96,48 @@ if (!($xpos_punto === false)) {
     $xcifra = "0" . $xcifra;
     $xpos_punto = strpos($xcifra, ".");
   }
-  $xaux_int = substr($xcifra, 0, $xpos_punto); // obtengo el entero de la cifra a covertir
-  $xdecimales = substr($xcifra . "00", $xpos_punto + 1, 2); // obtengo los valores decimales
+  $xaux_int = substr($xcifra, 0, $xpos_punto);
+  $xdecimales = substr($xcifra . "00", $xpos_punto + 1, 2);
 }
 
-$XAUX = str_pad($xaux_int, 18, " ", STR_PAD_LEFT); // ajusto la longitud de la cifra, para que sea divisible por centenas de miles (grupos de 6)
+$XAUX = str_pad($xaux_int, 18, " ", STR_PAD_LEFT);
 $xcadena = "";
 for ($xz = 0; $xz < 3; $xz++) {
   $xaux = substr($XAUX, $xz * 6, 6);
   $xi = 0;
-  $xlimite = 6; // inicializo el contador de centenas xi y establezco el límite a 6 dígitos en la parte entera
-  $xexit = true; // bandera para controlar el ciclo del While
+  $xlimite = 6;
+  $xexit = true;
   while ($xexit) {
-    if ($xi == $xlimite) { // si ya llegó al límite máximo de enteros
-      break; // termina el ciclo
+    if ($xi == $xlimite) {
+      break;
     }
 
-    $x3digitos = ($xlimite - $xi) * -1; // comienzo con los tres primeros digitos de la cifra, comenzando por la izquierda
-    $xaux = substr($xaux, $x3digitos, abs($x3digitos)); // obtengo la centena (los tres dígitos)
-    for ($xy = 1; $xy < 4; $xy++) { // ciclo para revisar centenas, decenas y unidades, en ese orden
+    $x3digitos = ($xlimite - $xi) * -1;
+    $xaux = substr($xaux, $x3digitos, abs($x3digitos));
+    for ($xy = 1; $xy < 4; $xy++) {
       switch ($xy) {
-        case 1: // checa las centenas
-        if (substr($xaux, 0, 3) < 100) { // si el grupo de tres dígitos es menor a una centena ( < 99) no hace nada y pasa a revisar las decenas
+        case 1:
+        if (substr($xaux, 0, 3) < 100) {
 
         } else {
           $key = (int) substr($xaux, 0, 3);
-          if (TRUE === array_key_exists($key, $xarray)){  // busco si la centena es número redondo (100, 200, 300, 400, etc..)
+          if (TRUE === array_key_exists($key, $xarray)){
             $xseek = $xarray[$key];
-            $xsub = subfijo($xaux); // devuelve el subfijo correspondiente (Millón, Millones, Mil o nada)
+            $xsub = subfijo($xaux);
             if (substr($xaux, 0, 3) == 100)
             $xcadena = " " . $xcadena . " CIEN " . $xsub;
             else
             $xcadena = " " . $xcadena . " " . $xseek . " " . $xsub;
-            $xy = 3; // la centena fue redonda, entonces termino el ciclo del for y ya no reviso decenas ni unidades
+            $xy = 3;
           }
-          else { // entra aquí si la centena no fue numero redondo (101, 253, 120, 980, etc.)
+          else {
             $key = (int) substr($xaux, 0, 1) * 100;
-            $xseek = $xarray[$key]; // toma el primer caracter de la centena y lo multiplica por cien y lo busca en el arreglo (para que busque 100,200,300, etc)
+            $xseek = $xarray[$key];
             $xcadena = " " . $xcadena . " " . $xseek;
-          } // ENDIF ($xseek)
-        } // ENDIF (substr($xaux, 0, 3) < 100)
+          }
+        }
         break;
-        case 2: // checa las decenas (con la misma lógica que las centenas)
+        case 2:
         if (substr($xaux, 1, 2) < 10) {
 
         } else {
@@ -163,31 +158,30 @@ for ($xz = 0; $xz < 3; $xz++) {
             $xcadena = " " . $xcadena . " " . $xseek;
             else
             $xcadena = " " . $xcadena . " " . $xseek . " Y ";
-          } // ENDIF ($xseek)
-        } // ENDIF (substr($xaux, 1, 2) < 10)
+          }
+        }
         break;
-        case 3: // checa las unidades
-        if (substr($xaux, 2, 1) < 1) { // si la unidad es cero, ya no hace nada
+        case 3:
+        if (substr($xaux, 2, 1) < 1) {
 
         } else {
           $key = (int) substr($xaux, 2, 1);
-          $xseek = $xarray[$key]; // obtengo directamente el valor de la unidad (del uno al nueve)
+          $xseek = $xarray[$key];
           $xsub = subfijo($xaux);
           $xcadena = " " . $xcadena . " " . $xseek . " " . $xsub;
-        } // ENDIF (substr($xaux, 2, 1) < 1)
+        }
         break;
-      } // END SWITCH
-    } // END FOR
+      }
+    }
     $xi = $xi + 3;
-  } // ENDDO
+  }
 
-  if (substr(trim($xcadena), -5, 5) == "ILLON") // si la cadena obtenida termina en MILLON o BILLON, entonces le agrega al final la conjuncion DE
+  if (substr(trim($xcadena), -5, 5) == "ILLON")
   $xcadena.= " DE";
 
-  if (substr(trim($xcadena), -7, 7) == "ILLONES") // si la cadena obtenida en MILLONES o BILLONES, entoncea le agrega al final la conjuncion DE
+  if (substr(trim($xcadena), -7, 7) == "ILLONES")
   $xcadena.= " DE";
 
-  // ----------- esta línea la puedes cambiar de acuerdo a tus necesidades o a tu país -------
   if (trim($xaux) != "") {
     switch ($xz) {
       case 0:
@@ -210,45 +204,37 @@ for ($xz = 0; $xz < 3; $xz++) {
         $xcadena = "UN PESO $xdecimales/100 M.N. ";
       }
       if ($xcifra >= 2) {
-        $xcadena.= " PESOS $xdecimales/100 M.N. "; //
+        $xcadena.= " PESOS $xdecimales/100 M.N. ";
       }
       break;
-    } // endswitch ($xz)
-  } // ENDIF (trim($xaux) != "")
-  // ------------------      en este caso, para México se usa esta leyenda     ----------------
-  $xcadena = str_replace("VEINTI ", "VEINTI", $xcadena); // quito el espacio para el VEINTI, para que quede: VEINTICUATRO, VEINTIUN, VEINTIDOS, etc
-  $xcadena = str_replace("  ", " ", $xcadena); // quito espacios dobles
-  $xcadena = str_replace("UN UN", "UN", $xcadena); // quito la duplicidad
-  $xcadena = str_replace("  ", " ", $xcadena); // quito espacios dobles
-  $xcadena = str_replace("BILLON DE MILLONES", "BILLON DE", $xcadena); // corrijo la leyenda
-  $xcadena = str_replace("BILLONES DE MILLONES", "BILLONES DE", $xcadena); // corrijo la leyenda
-  $xcadena = str_replace("DE UN", "UN", $xcadena); // corrijo la leyenda
-} // ENDFOR ($xz)
+    }
+  }
+
+  $xcadena = str_replace("VEINTI ", "VEINTI", $xcadena);
+  $xcadena = str_replace("  ", " ", $xcadena);
+  $xcadena = str_replace("UN UN", "UN", $xcadena);
+  $xcadena = str_replace("  ", " ", $xcadena);
+  $xcadena = str_replace("BILLON DE MILLONES", "BILLON DE", $xcadena);
+  $xcadena = str_replace("BILLONES DE MILLONES", "BILLONES DE", $xcadena);
+  $xcadena = str_replace("DE UN", "UN", $xcadena);
+}
 return trim($xcadena);
 }
 
-// END FUNCTION
-
-function subfijo($xx)
-{ // esta función regresa un subfijo para la cifra
+function subfijo($xx){
   $xx = trim($xx);
   $xstrlen = strlen($xx);
   if ($xstrlen == 1 || $xstrlen == 2 || $xstrlen == 3)
   $xsub = "";
-  //
   if ($xstrlen == 4 || $xstrlen == 5 || $xstrlen == 6)
   $xsub = "MIL";
-  //
   return $xsub;
 }
-
-
 
 //------------------------------------------------------------------------------
 
 
-
-$pdf=new PDF_AutoPrint('L','mm','Letter'); // $pdf = new PDF('P','mm','Letter'); OR // $pdf=new PDF_AutoPrint('P','mm','Letter');
+$pdf=new PDF_AutoPrint('L','mm','Letter');
 $title = 'Ejemplo de Formateo';
 $nombre = utf8_decode(isset($_REQUEST['nombre']) ? $_REQUEST['nombre'] : '');
 $cantidad = utf8_decode(isset($_REQUEST['cantidad']) ? $_REQUEST['cantidad'] : '');
@@ -260,7 +246,7 @@ $fecha=strtoupper(strftime("%d de %B de %Y",strtotime($fecha)));
 $leyenda = utf8_decode(isset($_REQUEST['leyenda']) ? $_REQUEST['leyenda'] : '');
 
 $pdf->SetTitle($title);
-$pdf->PrintChapter(0,'');// $pdf->PrintChapter(0,'','pruebas/cheque.txt');
+$pdf->PrintChapter(0,'');
 $pdf->AutoPrint(true);
-$pdf->Output();// $pdf->Output('LaWeaFome.pdf','I','true');
+$pdf->Output();
 ?>

@@ -1,0 +1,14 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "submenuconfigcheques",
+        "designer|userClassName": "submenuimprimirChequesViewModel2"
+    },
+    "name": "submenuimprimirChequesViewModel2",
+    "designerId": "116934a8-3658-451b-a8e3-6180a8d7ab83"
+}

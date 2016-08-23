@@ -32,8 +32,10 @@ Ext.define('Cheques.view.submenuimprimirCheques', {
         type: 'submenuimprimircheques'
     },
     modal: true,
+    autoShow: true,
     draggable: false,
     height: 278,
+    id: 'submenuimprimirCheques',
     resizable: false,
     width: 489,
     title: 'Imprimir Cheques',

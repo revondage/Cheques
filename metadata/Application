@@ -16,7 +16,8 @@
         "views": [
             "MyViewport",
             "submenuimprimirCheques",
-            "wea"
+            "wea",
+            "submenuconfigCheques"
         ]
     },
     "name": "Application",

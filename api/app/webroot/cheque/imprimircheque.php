@@ -19,17 +19,28 @@ class PDF_AutoPrint extends PDF_JavaScript{
     global $leyenda;
     global $cantidad;
     global $monto;
+
+    $lx = isset($_REQUEST['lx']) ? $_REQUEST['lx'] : '';
+    $ly = isset($_REQUEST['ly']) ? $_REQUEST['ly'] : '';
+    $nx = isset($_REQUEST['nx']) ? $_REQUEST['nx'] : '';
+    $ny = isset($_REQUEST['ny']) ? $_REQUEST['ny'] : '';
+    $mx = isset($_REQUEST['mx']) ? $_REQUEST['mx'] : '';
+    $my = isset($_REQUEST['my']) ? $_REQUEST['my'] : '';
+    $cx = isset($_REQUEST['cx']) ? $_REQUEST['cx'] : '';
+    $cy = isset($_REQUEST['cy']) ? $_REQUEST['cy'] : '';
+    $fx = isset($_REQUEST['fx']) ? $_REQUEST['fx'] : '';
+    $fy = isset($_REQUEST['fy']) ? $_REQUEST['fy'] : '';
     $this->SetFont('Arial','B',8);
-    $this->SetXY(148,88);
+    $this->SetXY($lx,$ly);
     $this->Multicell(0,5,$leyenda,0,1,'C',true);
     $this->SetFont('Arial','',8);
-    $this->SetXY(125,96);
+    $this->SetXY($nx,$ny);
     $this->Multicell(0,5,$nombre,0,1,'C',true);
-    $this->SetXY(125,104);
+    $this->SetXY($mx,$my);
     $this->Multicell(0,5,$monto,0,1,'C',true);
-    $this->SetXY(250,97);
+    $this->SetXY($cx,$cy);
     $this->Multicell(0,5,$cantidad,0,1,'C',true);
-    $this->SetXY(229,84);
+    $this->SetXY($fx,$fy);
     $this->Multicell(0,5,$fecha,0,1,'C',true);
   }
 

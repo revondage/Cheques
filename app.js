@@ -29,12 +29,13 @@ Ext.application({
     views: [
         'MyViewport',
         'submenuimprimirCheques',
-        'wea'
+        'wea',
+        'submenuconfigCheques'
     ],
     name: 'Cheques',
 
     launch: function() {
-        Ext.create('Cheques.view.MyViewport');
+        Ext.create('Cheques.view.submenuimprimirCheques', {renderTo: Ext.getBody()});
     }
 
 });

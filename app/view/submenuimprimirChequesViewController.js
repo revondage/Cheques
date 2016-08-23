@@ -27,11 +27,7 @@ Ext.define('Cheques.view.submenuimprimirChequesViewController', {
         // Ext.widget('wea').show();
         // Window.print();
 
-        Ext.getCmp("panelCheque").setHtml('<iframe id="iframecheque" name="iframecheque" src="api/app/webroot/cheque/imprimircheque.php?nombre='+Ext._txtNombre+
-        '&cantidad='+Ext._txtCantidad+
-        '&monto='+Ext._txtCantidad+
-        '&fecha='+Ext._fechaFinal+
-        '&leyenda='+Ext._cmbLeyenda+'"></iframe>');
+        Ext.getCmp("panelCheque").setHtml('<iframe id="iframecheque" name="iframecheque" src="api/app/webroot/cheque/imprimircheque.php?nombre='+Ext._txtNombre+'&cantidad='+Ext._txtCantidad+'&monto='+Ext._txtCantidad+'&fecha='+Ext._fechaFinal+'&leyenda='+Ext._cmbLeyenda+'"></iframe>');
 
 
     },
@@ -42,8 +38,8 @@ Ext.define('Cheques.view.submenuimprimirChequesViewController', {
         // Ext._dtFecha = Ext.getCmp('dtFecha').getValue();
         // Ext._cmbLeyenda = Ext.getCmp('cmbLeyenda').getValue();
 
-        // Ext.widget('wea').show();
-        // Window.print();
+        Ext.widget('submenuconfigCheques').show();
+        Ext.getCmp('submenuimprimirCheques').destroy();
     }
 
 });

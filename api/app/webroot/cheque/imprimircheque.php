@@ -1,7 +1,6 @@
 <?php
 require('fpdf/pdf_js.php');
 
-
 class PDF_AutoPrint extends PDF_JavaScript{
   function Header(){
     global $title;
@@ -30,7 +29,21 @@ class PDF_AutoPrint extends PDF_JavaScript{
     $cy = isset($_REQUEST['cy']) ? $_REQUEST['cy'] : '';
     $fx = isset($_REQUEST['fx']) ? $_REQUEST['fx'] : '';
     $fy = isset($_REQUEST['fy']) ? $_REQUEST['fy'] : '';
+
+    // $lx = 148;
+    // $ly = 88;
+    // $nx = 125;
+    // $ny = 96;
+    // $mx = 125;
+    // $my = 104;
+    // $cx = 250;
+    // $cy = 97;
+    // $fx = 229;
+    // $fy = 84;
+    // $posconfig = $poscx.",".$poscy;
+
     $this->SetFont('Arial','B',8);
+    // $this->SetXY(148,88);
     $this->SetXY($lx,$ly);
     $this->Multicell(0,5,$leyenda,0,1,'C',true);
     $this->SetFont('Arial','',8);
@@ -73,8 +86,7 @@ class PDF_AutoPrint extends PDF_JavaScript{
 
 //------------------------------------------------------------------------------
 
-function numtoletras($xcifra)
-{
+function numtoletras($xcifra){
   $xarray = array(0 => "CERO",
   1 => "UN", "DOS", "TRES", "CUATRO", "CINCO", "SEIS", "SIETE", "OCHO", "NUEVE",
   "DIEZ", "ONCE", "DOCE", "TRECE", "CATORCE", "QUINCE", "DIECISEIS", "DIECISIETE", "DIECIOCHO", "DIECINUEVE",
@@ -151,7 +163,7 @@ for ($xz = 0; $xz < 3; $xz++) {
         case 2:
         if (substr($xaux, 1, 2) < 10) {
 
-        } else {
+        }else{
           $key = (int) substr($xaux, 1, 2);
           if (TRUE === array_key_exists($key, $xarray)) {
             $xseek = $xarray[$key];
@@ -161,8 +173,7 @@ for ($xz = 0; $xz < 3; $xz++) {
             else
             $xcadena = " " . $xcadena . " " . $xseek . " " . $xsub;
             $xy = 3;
-          }
-          else {
+          }else{
             $key = (int) substr($xaux, 1, 1) * 10;
             $xseek = $xarray[$key];
             if (20 == substr($xaux, 1, 1) * 10)
@@ -175,7 +186,7 @@ for ($xz = 0; $xz < 3; $xz++) {
         case 3:
         if (substr($xaux, 2, 1) < 1) {
 
-        } else {
+        }else{
           $key = (int) substr($xaux, 2, 1);
           $xseek = $xarray[$key];
           $xsub = subfijo($xaux);
@@ -193,7 +204,7 @@ for ($xz = 0; $xz < 3; $xz++) {
   if (substr(trim($xcadena), -7, 7) == "ILLONES")
   $xcadena.= " DE";
 
-  if (trim($xaux) != "") {
+  if (trim($xaux) != ""){
     switch ($xz) {
       case 0:
       if (trim(substr($XAUX, $xz * 6, 6)) == "1")
@@ -255,6 +266,7 @@ $fecha = utf8_decode(isset($_REQUEST['fecha']) ? $_REQUEST['fecha'] : '');
 setlocale(LC_TIME, 'es_MX.UTF-8');
 $fecha=strtoupper(strftime("%d de %B de %Y",strtotime($fecha)));
 $leyenda = utf8_decode(isset($_REQUEST['leyenda']) ? $_REQUEST['leyenda'] : '');
+
 
 $pdf->SetTitle($title);
 $pdf->PrintChapter(0,'');

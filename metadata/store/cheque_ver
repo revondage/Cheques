@@ -70,12 +70,12 @@
                     "userConfig": {
                         "fn": "onAjaxException",
                         "implHandler": [
-                            "Ext.MessageBox.show({",
-                            "    title: 'Mensaje del Sistema',",
-                            "    msg: operation.getError(),",
-                            "    icon: Ext.MessageBox.info,",
-                            "    buttons: Ext.Msg.OK",
-                            "});"
+                            "// Ext.MessageBox.show({",
+                            "//     title: 'Mensaje del Sistema',",
+                            "//     msg: operation.getError(),",
+                            "//     icon: Ext.MessageBox.info,",
+                            "//     buttons: Ext.Msg.OK",
+                            "// });"
                         ],
                         "name": "exception",
                         "scope": "me"
@@ -95,12 +95,12 @@
             "userConfig": {
                 "fn": "onStoreWrite",
                 "implHandler": [
-                    "Ext.MessageBox.show({",
-                    "                        title: \"Mensaje del Sistema\",",
-                    "                        msg: operation.getResultSet().message,",
-                    "                        icon: Ext.MessageBox.info,",
-                    "                        buttons: Ext.Msg.OK",
-                    "                    });",
+                    "// Ext.MessageBox.show({",
+                    "//                         title: \"Mensaje del Sistema\",",
+                    "//                         msg: operation.getResultSet().message,",
+                    "//                         icon: Ext.MessageBox.info,",
+                    "//                         buttons: Ext.Msg.OK",
+                    "//                     });",
                     "// store.load({params: {id_banco:Ext._combocheque}});"
                 ],
                 "name": "write",

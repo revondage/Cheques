@@ -65,21 +65,21 @@ Ext.define('Cheques.store.cheque_ver', {
     },
 
     onAjaxException: function(proxy, request, operation, eOpts) {
-        Ext.MessageBox.show({
-            title: 'Mensaje del Sistema',
-            msg: operation.getError(),
-            icon: Ext.MessageBox.info,
-            buttons: Ext.Msg.OK
-        });
+        // Ext.MessageBox.show({
+        //     title: 'Mensaje del Sistema',
+        //     msg: operation.getError(),
+        //     icon: Ext.MessageBox.info,
+        //     buttons: Ext.Msg.OK
+        // });
     },
 
     onStoreWrite: function(store, operation, eOpts) {
-        Ext.MessageBox.show({
-                                title: "Mensaje del Sistema",
-                                msg: operation.getResultSet().message,
-                                icon: Ext.MessageBox.info,
-                                buttons: Ext.Msg.OK
-                            });
+        // Ext.MessageBox.show({
+        //                         title: "Mensaje del Sistema",
+        //                         msg: operation.getResultSet().message,
+        //                         icon: Ext.MessageBox.info,
+        //                         buttons: Ext.Msg.OK
+        //                     });
         // store.load({params: {id_banco:Ext._combocheque}});
     }
 

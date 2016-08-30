@@ -20,10 +20,12 @@ Ext.define('Cheques.view.submenuimprimirChequesViewController2', {
     onCmbBancoChange: function(field, newValue, oldValue, eOpts) {
         if (newValue!=="" && newValue!==null){
             Ext._combocheque = Ext.getCmp('cmbBanco').getValue();
-            Ext.getStore('cheque_ver').load({params:{'id_banco':Ext._combocheque}});
+            var vcheque = Ext._combocheque;
+            Ext.getStore('cheque_ver').load({params:{'id_banco':vcheque}});
         }
 
         console.log(Ext._combocheque);
+        console.log(vcheque);
     },
 
     onButtonClick: function(button, e, eOpts) {

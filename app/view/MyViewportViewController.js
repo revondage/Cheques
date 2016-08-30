@@ -21,7 +21,8 @@ Ext.define('Cheques.view.MyViewportViewController', {
         Ext._nombrealias="imprimirCheques";
         // Ext.getStore('store'+Ext._nombrealias).load();
         // Ext.getStore('store'+Ext._nombrealias).clearFilter();
-        Ext.widget('submenu'+Ext._nombrealias).show();
+        // Ext.widget('submenu'+Ext._nombrealias).show();
+        Ext.widget(Ext._nombrealias).show();
     }
 
 });

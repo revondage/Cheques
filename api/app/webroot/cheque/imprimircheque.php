@@ -2,15 +2,6 @@
 require('fpdf/pdf_js.php');
 
 class PDF_AutoPrint extends PDF_JavaScript{
-  function Header(){
-    global $title;
-  }
-
-  function ChapterTitle($num, $label){
-    $this->SetFont('Arial','',12);
-    $this->SetFillColor(255,255,255);
-    $this->SetY(42);
-  }
 
   function ChapterBody(){
     global $nombre;
@@ -19,47 +10,38 @@ class PDF_AutoPrint extends PDF_JavaScript{
     global $cantidad;
     global $monto;
 
-    $lx = isset($_REQUEST['lx']) ? $_REQUEST['lx'] : '';
-    $ly = isset($_REQUEST['ly']) ? $_REQUEST['ly'] : '';
-    $nx = isset($_REQUEST['nx']) ? $_REQUEST['nx'] : '';
-    $ny = isset($_REQUEST['ny']) ? $_REQUEST['ny'] : '';
-    $mx = isset($_REQUEST['mx']) ? $_REQUEST['mx'] : '';
-    $my = isset($_REQUEST['my']) ? $_REQUEST['my'] : '';
-    $cx = isset($_REQUEST['cx']) ? $_REQUEST['cx'] : '';
-    $cy = isset($_REQUEST['cy']) ? $_REQUEST['cy'] : '';
-    $fx = isset($_REQUEST['fx']) ? $_REQUEST['fx'] : '';
-    $fy = isset($_REQUEST['fy']) ? $_REQUEST['fy'] : '';
+    $lx = ISSET($_REQUEST['lx']) ? $_REQUEST['lx'] : '';
+    $ly = ISSET($_REQUEST['ly']) ? $_REQUEST['ly'] : '';
+    $nx = ISSET($_REQUEST['nx']) ? $_REQUEST['nx'] : '';
+    $ny = ISSET($_REQUEST['ny']) ? $_REQUEST['ny'] : '';
+    $mx = ISSET($_REQUEST['mx']) ? $_REQUEST['mx'] : '';
+    $my = ISSET($_REQUEST['my']) ? $_REQUEST['my'] : '';
+    $cx = ISSET($_REQUEST['cx']) ? $_REQUEST['cx'] : '';
+    $cy = ISSET($_REQUEST['cy']) ? $_REQUEST['cy'] : '';
+    $fx = ISSET($_REQUEST['fx']) ? $_REQUEST['fx'] : '';
+    $fy = ISSET($_REQUEST['fy']) ? $_REQUEST['fy'] : '';
 
-    // $lx = 148;
-    // $ly = 88;
-    // $nx = 125;
-    // $ny = 96;
-    // $mx = 125;
-    // $my = 104;
-    // $cx = 250;
-    // $cy = 97;
-    // $fx = 229;
-    // $fy = 84;
+    // $lx = 148;$ly = 88;
+    // $nx = 125;$ny = 96;
+    // $mx = 125;$my = 104;
+    // $cx = 250;$cy = 97;
+    // $fx = 229;$fy = 84;
+
     // $posconfig = $poscx.",".$poscy;
 
-    $this->SetFont('Arial','B',8);
-    // $this->SetXY(148,88);
-    $this->SetXY($lx,$ly);
-    $this->Multicell(0,5,$leyenda,0,1,'C',true);
-    $this->SetFont('Arial','',8);
-    $this->SetXY($nx,$ny);
-    $this->Multicell(0,5,$nombre,0,1,'C',true);
-    $this->SetXY($mx,$my);
-    $this->Multicell(0,5,$monto,0,1,'C',true);
-    $this->SetXY($cx,$cy);
-    $this->Multicell(0,5,$cantidad,0,1,'C',true);
-    $this->SetXY($fx,$fy);
-    $this->Multicell(0,5,$fecha,0,1,'C',true);
+
+    $this->SetXY($nx,$ny);$this->Multicell(0,0,$nombre); // $this->SetXY(125,98);
+    $this->SetXY($mx,$my);$this->Multicell(0,0,$monto); // $this->SetXY(125,106);
+    $this->SetXY($cx,$cy);$this->Multicell(0,0,$cantidad); // $this->SetXY(250,99);
+    $this->SetXY($fx,$fy);$this->Multicell(0,0,$fecha); // $this->SetXY(229,85);
+    $this->SetFont('','B');//Leyenda del Chqeque en Negritas
+    $this->SetXY($lx,$ly);$this->Multicell(0,0,$leyenda); // $this->SetXY(148,88);
   }
 
-  function PrintChapter($num, $title){
+  // function PrintChapter($num,$title)
+  function PrintChapter(){
     $this->AddPage();
-    $this->ChapterTitle($num,$title);
+    // $this->ChapterTitle($num,$title);
     $this->ChapterBody();
   }
 
@@ -83,6 +65,27 @@ class PDF_AutoPrint extends PDF_JavaScript{
     $this->IncludeJS($script);
   }
 }
+
+$pdf=new PDF_AutoPrint('L','mm','Letter');
+// $pdf->AddFont('GloucesterMT-ExtraCondensed','','glecb.php');
+$pdf->SetFont('Arial','',8);
+// $pdf->SetTextColor(100,100,120);
+// $pdf->SetFillColor(255,255,255);
+
+// $title = 'Cheque';
+$nombre = utf8_decode(isset($_REQUEST['nombre']) ? $_REQUEST['nombre'] : '');
+$cantidad = utf8_decode(isset($_REQUEST['cantidad']) ? $_REQUEST['cantidad'] : '');
+$cantidad = number_format($cantidad, 2);
+$monto = utf8_decode(isset($_REQUEST['cantidad']) ? numtoletras($_REQUEST['cantidad']) : '');
+$fecha = utf8_decode(isset($_REQUEST['fecha']) ? $_REQUEST['fecha'] : '');
+setlocale(LC_TIME, 'es_MX.UTF-8');
+$fecha=strtoupper(strftime("%d de %B de %Y",strtotime($fecha)));
+$leyenda = utf8_decode(isset($_REQUEST['leyenda']) ? $_REQUEST['leyenda'] : '');
+
+// $pdf->SetTitle($title);
+$pdf->PrintChapter(0,'');
+$pdf->AutoPrint(true);
+$pdf->Output();
 
 //------------------------------------------------------------------------------
 
@@ -253,23 +256,4 @@ function subfijo($xx){
   return $xsub;
 }
 
-//------------------------------------------------------------------------------
-
-
-$pdf=new PDF_AutoPrint('L','mm','Letter');
-$title = 'Ejemplo de Formateo';
-$nombre = utf8_decode(isset($_REQUEST['nombre']) ? $_REQUEST['nombre'] : '');
-$cantidad = utf8_decode(isset($_REQUEST['cantidad']) ? $_REQUEST['cantidad'] : '');
-$cantidad = number_format($cantidad, 2);
-$monto = utf8_decode(isset($_REQUEST['cantidad']) ? numtoletras($_REQUEST['cantidad']) : '');
-$fecha = utf8_decode(isset($_REQUEST['fecha']) ? $_REQUEST['fecha'] : '');
-setlocale(LC_TIME, 'es_MX.UTF-8');
-$fecha=strtoupper(strftime("%d de %B de %Y",strtotime($fecha)));
-$leyenda = utf8_decode(isset($_REQUEST['leyenda']) ? $_REQUEST['leyenda'] : '');
-
-
-$pdf->SetTitle($title);
-$pdf->PrintChapter(0,'');
-$pdf->AutoPrint(true);
-$pdf->Output();
 ?>

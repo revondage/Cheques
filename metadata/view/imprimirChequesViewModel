@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "imprimircheques",
+        "designer|userClassName": "imprimirChequesViewModel"
+    },
+    "designerId": "f8ba3e3a-0658-4dc8-802b-c7edc65c4575"
+}

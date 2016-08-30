@@ -6,7 +6,7 @@
     },
     "codeClass": null,
     "userConfig": {
-        "designer|userAlias": "submenuconfigcheques",
+        "designer|userAlias": "configcheques",
         "designer|userClassName": "submenuimprimirChequesViewModel2"
     },
     "name": "submenuimprimirChequesViewModel2",

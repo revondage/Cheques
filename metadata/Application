@@ -7,17 +7,23 @@
     "codeClass": null,
     "userConfig": {
         "models": [
-            "cmbLeyenda"
+            "leyenda",
+            "banco",
+            "impresora",
+            "cheque_ver"
         ],
         "name": "Cheques",
         "stores": [
-            "cmbLeyenda"
+            "leyenda",
+            "impresora",
+            "banco",
+            "cheque_ver"
         ],
         "views": [
             "MyViewport",
-            "submenuimprimirCheques",
+            "imprimirCheques",
             "wea",
-            "submenuconfigCheques"
+            "configCheques"
         ]
     },
     "name": "Application",

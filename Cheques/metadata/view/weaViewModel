@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewModel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "wea",
+        "designer|userClassName": "weaViewModel"
+    },
+    "designerId": "3e8f2866-ef41-4fe2-a188-7d08c4827c80"
+}

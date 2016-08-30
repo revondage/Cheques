@@ -1,0 +1,154 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "bodyPadding": "20 10",
+        "designer|userAlias": "wea",
+        "designer|userClassName": "wea",
+        "flex": 1,
+        "height": 430,
+        "html": [
+            "<img src=\"resources/img/cheque.jpg\"/>"
+        ],
+        "title": "My Window",
+        "width": 711
+    },
+    "name": "MyWindow",
+    "designerId": "2e0c92a3-11fe-43f1-9796-310c13eaf2a0",
+    "viewControllerInstanceId": "139cb01c-ab3f-4598-a745-562a21b3b8cd",
+    "viewModelInstanceId": "3e8f2866-ef41-4fe2-a188-7d08c4827c80",
+    "cn": [
+        {
+            "type": "viewcontrollereventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onWindowAfterRender",
+                "implHandler": [
+                    "// console.log(Ext._txtNombre);",
+                    "Ext.getCmp('nombreRecibe').setHidden(false);",
+                    "var valor = Ext.getCmp('nombreRecibe').setValue(Ext._txtNombre);",
+                    "valor = Ext.getCmp('nombreRecibe').setStyle({'font-family':'Anonymous Pro','font-size':'6','font-weight': '500'});",
+                    "valor.setPosition(50,100, false);",
+                    "",
+                    "Ext.getCmp('cantidadRecibe').setHidden(false);",
+                    "var valor = Ext.getCmp('cantidadRecibe').setValue(Ext._txtCantidad);",
+                    "valor = Ext.getCmp('cantidadRecibe').setStyle({'font-family':'Anonymous Pro','font-size':'6','font-weight': '500'});",
+                    "valor.setPosition(500,100, false);",
+                    "",
+                    "Ext.getCmp('fechaRecibe').setHidden(false);",
+                    "var valor = Ext.getCmp('fechaRecibe').setValue(Ext._dtFecha);",
+                    "valor = Ext.getCmp('fechaRecibe').setStyle({'font-family':'Anonymous Pro','font-size':'6','font-weight': '500'});",
+                    "valor.setPosition(415,50, false);",
+                    "",
+                    "Ext.getCmp('leyendaRecibe').setHidden(false);",
+                    "var valor = Ext.getCmp('leyendaRecibe').setValue(Ext._cmbLeyenda);",
+                    "valor = Ext.getCmp('leyendaRecibe').setStyle({'font-family':'Anonymous Pro','font-size':'6','font-weight': '900'});",
+                    "valor.setPosition(150,73, false);",
+                    ""
+                ],
+                "name": "afterrender",
+                "scope": "me"
+            },
+            "name": "onWindowAfterRender",
+            "designerId": "4bf00f23-498b-423f-aa3d-5b38af0d723a"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": null,
+                "floating": true,
+                "hidden": true,
+                "id": "nombreRecibe",
+                "shadow": false,
+                "value": null
+            },
+            "name": "MyDisplayField",
+            "designerId": "6a276238-5179-4c0e-8fc2-d8120b51a131"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": null,
+                "floating": true,
+                "hidden": true,
+                "id": "cantidadRecibe",
+                "shadow": false,
+                "value": null
+            },
+            "name": "MyDisplayField1",
+            "designerId": "71ced4ba-37bd-4755-b61d-abec1352371e"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": null,
+                "floating": true,
+                "hidden": true,
+                "id": "montoRecibe",
+                "shadow": false,
+                "value": null
+            },
+            "name": "MyDisplayField2",
+            "designerId": "3e3af2ba-16d6-4738-9381-e725cf0b9cd5"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": null,
+                "floating": true,
+                "hidden": true,
+                "id": "fechaRecibe",
+                "shadow": false,
+                "value": null
+            },
+            "name": "MyDisplayField3",
+            "designerId": "12494104-de72-4c40-9b9c-96e711737b67"
+        },
+        {
+            "type": "Ext.form.field.Display",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fieldLabel": null,
+                "floating": true,
+                "hidden": true,
+                "id": "leyendaRecibe",
+                "shadow": false,
+                "value": null
+            },
+            "name": "MyDisplayField4",
+            "designerId": "471c2920-eed5-4153-8ec4-2c18e441f4db"
+        }
+    ]
+}

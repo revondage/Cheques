@@ -15,6 +15,6 @@
 
 Ext.define('Cheques.view.submenuimprimirChequesViewModel2', {
     extend: 'Ext.app.ViewModel',
-    alias: 'viewmodel.submenuconfigcheques'
+    alias: 'viewmodel.configcheques'
 
 });

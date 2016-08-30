@@ -1,0 +1,54 @@
+{
+    "type": "Ext.data.Model",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "cheque_ver"
+    },
+    "name": "banco4",
+    "designerId": "15bbf133-7cd7-4157-b4dc-7dae04582a0a",
+    "cn": [
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "id"
+            },
+            "name": "MyField",
+            "designerId": "96f16dda-e916-489a-b3e1-c51accf8a364"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "version"
+            },
+            "name": "MyField1",
+            "designerId": "ae84df3d-faa1-4ba5-810a-68742c31d050"
+        },
+        {
+            "type": "Ext.data.field.Field",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "name": "banco_id"
+            },
+            "name": "MyField2",
+            "designerId": "341bc5ca-d528-4d37-bd74-217769d98170"
+        }
+    ]
+}

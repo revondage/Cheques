@@ -15,25 +15,86 @@
 
 Ext.define('Cheques.view.submenuimprimirChequesViewController2', {
     extend: 'Ext.app.ViewController',
-    alias: 'controller.submenuconfigcheques',
+    alias: 'controller.configcheques',
+
+    onCmbBancoChange: function(field, newValue, oldValue, eOpts) {
+        if (newValue!=="" && newValue!==null){
+            Ext._combocheque = Ext.getCmp('cmbBanco').getValue();
+            //     Ext.Ajax.request({
+            //         method: 'GET',
+            //         url: 'api/Cheque/configCheque',
+            //         params: {id_banco: Ext._combocheque}
+            //     });
+        }
+
+
+
+
+        // Ext._combocheque = Ext.getCmp('cmbBanco').getValue();
+
+        // Ext.Ajax.request({
+        //     method: 'GET',
+        //     url: 'api/Cheque/configCheque',
+        //     params: {id_banco: Ext._combocheque},
+        //     success: function(response){
+        //         var res = Ext.JSON.decode(response.responseText);
+        //         localStorage.setItem('id_banco', Ext._combocheque);
+        //         if(Ext.isEmpty(res.data)) {
+        //             Ext.Msg.show({
+        //                 title:'Inicio de sesión incorrecta',
+        //                 message: 'Usuario y/o contraseña no válidos',
+        //                 buttons: Ext.Msg.OK,
+        //                 icon: Ext.Msg.ERROR,
+        //                 closable: false,
+        //                 draggable: false,
+        //             });
+        //         } else {
+        //                     Ext.getCmp('login').destroy();
+        //                     Ext.create('control.view.mainview', {}).show();
+        //             Ext.widget('ventanaPrincipal').show();
+        //             Ext.getCmp('inicioSesion').destroy();
+        //         }
+        //     }
+        // });
+
+
+
+
+        console.log(Ext._combocheque);
+    },
 
     onButtonClick: function(button, e, eOpts) {
-        Ext._txtNombre = Ext.getCmp('txtNombre').getValue();
-        Ext._txtCantidad = Ext.getCmp('txtCantidad').getValue();
-        Ext._dtFecha = Ext.getCmp('dtFecha').getValue();
-        Ext._fechaFinal = Ext.Date.format(Ext._dtFecha, "d-m-Y");
-        Ext._cmbLeyenda = Ext.getCmp('cmbLeyenda').getValue();
+        Ext._cmbCheque = Ext.getCmp('cmbCheque').getValue();
 
-        // Ext.widget('wea').show();
-        // Window.print();
+        switch (Ext._cmbCheque){
+            case 'Otro':
+            Ext._lx = '0'; Ext._ly = '0';
+            Ext._fx = '0'; Ext._fy = '0';
+            Ext._cx = '0'; Ext._cy = '0';
+            Ext._nx = '0'; Ext._ny = '0';
+            Ext._mx = '0'; Ext._my = '0';
+            break;
 
-        Ext.getCmp("panelCheque").setHtml('<iframe id="iframecheque" name="iframecheque" src="api/app/webroot/cheque/imprimircheque.php?nombre='+Ext._txtNombre+
-        '&cantidad='+Ext._txtCantidad+
-        '&monto='+Ext._txtCantidad+
-        '&fecha='+Ext._fechaFinal+
-        '&leyenda='+Ext._cmbLeyenda+'"></iframe>');
+            default:
+            Ext._lx = '148'; Ext._ly = '88';//89.8
+            Ext._fx = '229'; Ext._fy = '82';//83.3
+            Ext._cx = '250'; Ext._cy = '95';//97.7
+            Ext._nx = '125'; Ext._ny = '96';//97.7
+            Ext._mx = '125'; Ext._my = '104';//105
+
+        }
 
 
+        // Ext._loginusr = Ext.getCmp('loginusr').getValue();
+        // Ext._loginpw = Ext.getCmp('loginpw').getValue();
+
+        Ext.widget('imprimirCheques').show();
+        Ext.getCmp('configCheques').destroy();
+    },
+
+    onButtonClick1: function(button, e, eOpts) {
+        Ext.widget('imprimirCheques').show();
+        Ext.getCmp('configCheques').destroy();
     }
 
 });

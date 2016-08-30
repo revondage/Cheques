@@ -1354,6 +1354,10 @@ div.x-form-text-grow .x-form-textarea {
 .x-datepicker-month .x-btn-split > .x-btn-button:after {
     content: none;
 }
+/* W:/mlira/Cheques/ext/classic/theme-base/sass/src/form/field/Display.scss:1 */
+.x-form-display-field-body {
+    vertical-align: top;
+}
 /* W:/mlira/Cheques/ext/classic/theme-base/sass/src/tip/Tip.scss:1 */
 .x-tip {
     position: absolute;
@@ -8695,6 +8699,37 @@ a.x-monthpicker-yearnav-button:hover {
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/etc/mixins/font-icon.scss:126 */
 .x-form-field-date .x-form-date-trigger:before {
     content: "\f073";
+}
+/* W:/mlira/Cheques/ext/classic/theme-neutral/sass/var/form/field/Display.scss:52 */
+.x-form-display-field-default {
+    min-height: 32px;
+    font: 300 13px/17px 'Open Sans', 'Helvetica Neue', helvetica, arial, verdana, sans-serif;
+    color: #404040;
+    margin-top: 8px;
+}
+/* W:/mlira/Cheques/ext/classic/theme-neutral/sass/var/form/field/Display.scss:59 */
+.x-form-display-field-default.x-field-form-focus {
+    outline: 1px solid #3892d4;
+    outline-offset: -1px;
+}
+/* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/css-outline.scss:59 */
+.x-ie8 .x-form-display-field-default.x-field-form-focus {
+    outline: none;
+}
+/* W:/mlira/Cheques/ext/classic/theme-base/sass/etc/mixins/css-outline.scss:39 */
+.x-ie8 .x-form-display-field-default.x-field-form-focus:after {
+    position: absolute;
+    content: ' ';
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    border: 1px solid #3892d4;
+    pointer-events: none;
+}
+/* W:/mlira/Cheques/ext/classic/theme-neutral/sass/var/form/field/Display.scss:69 */
+.x-ie8 .x-form-display-field-default.x-field-form-focus {
+    position: relative;
 }
 /* W:/mlira/Cheques/ext/classic/theme-neutral/sass/src/tip/Tip.scss:180 */
 .x-tip-anchor {

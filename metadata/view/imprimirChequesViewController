@@ -1,0 +1,13 @@
+{
+    "type": "Ext.app.ViewController",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userAlias": "imprimircheques",
+        "designer|userClassName": "imprimirChequesViewController"
+    },
+    "designerId": "850fb32e-69e7-4f80-ac97-916a52525322"
+}

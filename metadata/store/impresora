@@ -1,0 +1,113 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoSync": true,
+        "designer|userClassName": "impresora",
+        "model": "impresora",
+        "storeId": "impresora"
+    },
+    "name": "banco2",
+    "designerId": "b1c9777e-7c17-4770-8ad6-ba18682ba98c",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": [
+                    "{read: 'api/Impresora/read',",
+                    "create: 'api/Impresora/create',",
+                    "update: 'api/Impresora/update'}"
+                ]
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "b2c23bdc-7050-412d-9861-65822252ccd9",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "messageProperty": "message",
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "8d2e17c6-ef36-4c65-b968-2a3c3c5a8631"
+                },
+                {
+                    "type": "Ext.data.writer.Json",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "encode": true,
+                        "rootProperty": "data",
+                        "writeAllFields": true
+                    },
+                    "name": "MyJsonWriter",
+                    "designerId": "17e98cc2-100d-4da8-910c-88f99ee19aef"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onAjaxException",
+                        "implHandler": [
+                            "Ext.MessageBox.show({",
+                            "    title: 'Mensaje del Sistema',",
+                            "    msg: operation.getError(),",
+                            "    icon: Ext.MessageBox.info,",
+                            "    buttons: Ext.Msg.OK",
+                            "});"
+                        ],
+                        "name": "exception",
+                        "scope": "me"
+                    },
+                    "name": "onAjaxException",
+                    "designerId": "92b2de34-2fa9-4c42-9cbc-ebb896146624"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onStoreWrite",
+                "implHandler": [
+                    "Ext.MessageBox.show({",
+                    "                        title: \"Mensaje del Sistema\",",
+                    "                        msg: operation.getResultSet().message,",
+                    "                        icon: Ext.MessageBox.info,",
+                    "                        buttons: Ext.Msg.OK",
+                    "                    });",
+                    "store.load();"
+                ],
+                "name": "write",
+                "scope": "me"
+            },
+            "name": "onStoreWrite",
+            "designerId": "c7d4670a-3ead-47f2-9c8e-086f595abb0f"
+        }
+    ]
+}

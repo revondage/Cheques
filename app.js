@@ -21,21 +21,27 @@ Ext.Loader.setConfig({
 
 Ext.application({
     models: [
-        'cmbLeyenda'
+        'leyenda',
+        'banco',
+        'impresora',
+        'cheque_ver'
     ],
     stores: [
-        'cmbLeyenda'
+        'leyenda',
+        'impresora',
+        'banco',
+        'cheque_ver'
     ],
     views: [
         'MyViewport',
-        'submenuimprimirCheques',
+        'imprimirCheques',
         'wea',
-        'submenuconfigCheques'
+        'configCheques'
     ],
     name: 'Cheques',
 
     launch: function() {
-        Ext.create('Cheques.view.submenuimprimirCheques', {renderTo: Ext.getBody()});
+        Ext.create('Cheques.view.imprimirCheques', {renderTo: Ext.getBody()});
     }
 
 });

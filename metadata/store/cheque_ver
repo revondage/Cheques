@@ -1,0 +1,113 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoSync": true,
+        "designer|userClassName": "cheque_ver",
+        "model": "cheque_ver",
+        "storeId": "cheque_ver"
+    },
+    "name": "cheque_ver1",
+    "designerId": "24ed0d22-a5d8-48b5-9cf7-f7f633761999",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": [
+                    "{read: 'api/Cheque/read',",
+                    "create: 'api/Cheque/create',",
+                    "update: 'api/Cheque/update'}"
+                ]
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "c2986c48-5090-4d57-96a3-7b2f23efde0a",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "messageProperty": "message",
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "6dcef7ee-cca8-4a24-bd8c-286e86483078"
+                },
+                {
+                    "type": "Ext.data.writer.Json",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "encode": true,
+                        "rootProperty": "data",
+                        "writeAllFields": true
+                    },
+                    "name": "MyJsonWriter",
+                    "designerId": "d9a531a4-b32b-435d-a963-1a664424f6f8"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onAjaxException",
+                        "implHandler": [
+                            "Ext.MessageBox.show({",
+                            "    title: 'Mensaje del Sistema',",
+                            "    msg: operation.getError(),",
+                            "    icon: Ext.MessageBox.info,",
+                            "    buttons: Ext.Msg.OK",
+                            "});"
+                        ],
+                        "name": "exception",
+                        "scope": "me"
+                    },
+                    "name": "onAjaxException",
+                    "designerId": "42aea14f-5fde-4432-97d9-b60ca4514f6d"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onStoreWrite",
+                "implHandler": [
+                    "Ext.MessageBox.show({",
+                    "                        title: \"Mensaje del Sistema\",",
+                    "                        msg: operation.getResultSet().message,",
+                    "                        icon: Ext.MessageBox.info,",
+                    "                        buttons: Ext.Msg.OK",
+                    "                    });",
+                    "// store.load({params: {id_banco:Ext._combocheque}});"
+                ],
+                "name": "write",
+                "scope": "me"
+            },
+            "name": "onStoreWrite",
+            "designerId": "32673789-d591-41ca-b819-15a443be8b55"
+        }
+    ]
+}

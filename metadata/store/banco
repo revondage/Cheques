@@ -1,0 +1,113 @@
+{
+    "type": "Ext.data.Store",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoSync": true,
+        "designer|userClassName": "banco",
+        "model": "banco",
+        "storeId": "banco"
+    },
+    "name": "banco1",
+    "designerId": "37517114-12ab-4d5b-9742-0201b9003d34",
+    "cn": [
+        {
+            "type": "Ext.data.proxy.Ajax",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "api": [
+                    "{read: 'api/Banco/read',",
+                    "create: 'api/Banco/create',",
+                    "update: 'api/Banco/update'}"
+                ]
+            },
+            "name": "MyAjaxProxy",
+            "designerId": "8f241bff-2de8-4b97-bcac-143db8839699",
+            "cn": [
+                {
+                    "type": "Ext.data.reader.Json",
+                    "reference": {
+                        "name": "reader",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "messageProperty": "message",
+                        "rootProperty": "data"
+                    },
+                    "name": "MyJsonReader",
+                    "designerId": "fec19bb7-a477-4fde-a871-81c933f4fa4c"
+                },
+                {
+                    "type": "Ext.data.writer.Json",
+                    "reference": {
+                        "name": "writer",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "encode": true,
+                        "rootProperty": "data",
+                        "writeAllFields": true
+                    },
+                    "name": "MyJsonWriter",
+                    "designerId": "ac4b8652-c399-4208-ba2b-870c02cd83c1"
+                },
+                {
+                    "type": "basiceventbinding",
+                    "reference": {
+                        "name": "listeners",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "fn": "onAjaxException",
+                        "implHandler": [
+                            "Ext.MessageBox.show({",
+                            "    title: 'Mensaje del Sistema',",
+                            "    msg: operation.getError(),",
+                            "    icon: Ext.MessageBox.info,",
+                            "    buttons: Ext.Msg.OK",
+                            "});"
+                        ],
+                        "name": "exception",
+                        "scope": "me"
+                    },
+                    "name": "onAjaxException",
+                    "designerId": "6eb515aa-86ee-430f-926b-caeeb1b857f1"
+                }
+            ]
+        },
+        {
+            "type": "basiceventbinding",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "fn": "onStoreWrite",
+                "implHandler": [
+                    "Ext.MessageBox.show({",
+                    "                        title: \"Mensaje del Sistema\",",
+                    "                        msg: operation.getResultSet().message,",
+                    "                        icon: Ext.MessageBox.info,",
+                    "                        buttons: Ext.Msg.OK",
+                    "                    });",
+                    "store.load();"
+                ],
+                "name": "write",
+                "scope": "me"
+            },
+            "name": "onStoreWrite",
+            "designerId": "fb499ced-b99d-498f-bb88-9beaca882a93"
+        }
+    ]
+}

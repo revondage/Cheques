@@ -1,0 +1,440 @@
+<wsdl:definitions targetNamespace="http://ws.internet.wwwroot" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://ws.internet.wwwroot" xmlns:intf="http://ws.internet.wwwroot" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns1="http://rpc.xml.coldfusion" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<!--WSDL created by ColdFusion version 10,0,11,285437-->
+ <wsdl:types>
+  <schema targetNamespace="http://rpc.xml.coldfusion" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://ws.internet.wwwroot"/>
+   <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+   <complexType name="CFCInvocationException">
+    <sequence/>
+   </complexType>
+   <complexType name="QueryBean">
+    <sequence>
+     <element name="columnList" nillable="true" type="impl:ArrayOf_xsd_string"/>
+     <element name="data" nillable="true" type="impl:ArrayOfArrayOf_xsd_anyType"/>
+    </sequence>
+   </complexType>
+  </schema>
+  <schema targetNamespace="http://ws.internet.wwwroot" xmlns="http://www.w3.org/2001/XMLSchema">
+   <import namespace="http://rpc.xml.coldfusion"/>
+   <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+   <complexType name="ArrayOf_xsd_string">
+    <complexContent>
+     <restriction base="soapenc:Array">
+      <attribute ref="soapenc:arrayType" wsdl:arrayType="xsd:string[]"/>
+     </restriction>
+    </complexContent>
+   </complexType>
+   <complexType name="ArrayOfArrayOf_xsd_anyType">
+    <complexContent>
+     <restriction base="soapenc:Array">
+      <attribute ref="soapenc:arrayType" wsdl:arrayType="xsd:anyType[][]"/>
+     </restriction>
+    </complexContent>
+   </complexType>
+  </schema>
+ </wsdl:types>
+
+   <wsdl:message name="loginRequest">
+      <wsdl:part name="key" type="xsd:string"></wsdl:part>
+      <wsdl:part name="usuario" type="xsd:int"></wsdl:part>
+      <wsdl:part name="password" type="xsd:int"></wsdl:part>
+      <wsdl:part name="sv600" type="xsd:int"></wsdl:part>
+   </wsdl:message>
+   <wsdl:message name="loginResponse">
+      <wsdl:part name="result" type="xsd:string"></wsdl:part>
+   </wsdl:message>
+   
+   <wsdl:message name="logoutRequest">
+      <wsdl:part name="key" type="xsd:string"></wsdl:part>
+      <wsdl:part name="usuario" type="xsd:int"></wsdl:part>
+      <wsdl:part name="sv600" type="xsd:int"></wsdl:part>
+   </wsdl:message>
+   <wsdl:message name="logoutResponse">
+      <wsdl:part name="result" type="xsd:string"></wsdl:part>
+   </wsdl:message>
+   
+   <wsdl:message name="asigna_valoresRequest">
+      <wsdl:part name="key" type="xsd:string"></wsdl:part>
+      <wsdl:part name="sv600" type="xsd:int"></wsdl:part>
+   </wsdl:message>
+   <wsdl:message name="asigna_valoresResponse">
+      <wsdl:part name="result" type="xsd:string"></wsdl:part>
+   </wsdl:message>
+   
+   <wsdl:message name="posicionRequest">
+      <wsdl:part name="key" type="xsd:string"></wsdl:part>
+      <wsdl:part name="sv600" type="xsd:int"></wsdl:part>
+      <wsdl:part name="latitud" type="xsd:string"></wsdl:part>
+      <wsdl:part name="longitud" type="xsd:string"></wsdl:part>
+      <wsdl:part name="rssi" type="xsd:int"></wsdl:part>
+   </wsdl:message>
+   <wsdl:message name="posicionResponse">
+      <wsdl:part name="result" type="xsd:string"></wsdl:part>
+   </wsdl:message>
+   
+   <wsdl:message name="tabla_puntosRequest">
+      <wsdl:part name="key" type="xsd:string"></wsdl:part>
+   </wsdl:message>
+   <wsdl:message name="tabla_puntosResponse">
+      <wsdl:part name="result" type="xsd:string"></wsdl:part>
+   </wsdl:message>
+   
+   <wsdl:message name="tabla_puntos_oroRequest">
+      <wsdl:part name="key" type="xsd:string"></wsdl:part>
+   </wsdl:message>
+   <wsdl:message name="tabla_puntos_oroResponse">
+      <wsdl:part name="result" type="xsd:string"></wsdl:part>
+   </wsdl:message>
+   
+   <wsdl:message name="tabla_pagofacilRequest">
+      <wsdl:part name="key" type="xsd:string"></wsdl:part>
+   </wsdl:message>
+   <wsdl:message name="tabla_pagofacilResponse">
+      <wsdl:part name="result" type="xsd:string"></wsdl:part>
+   </wsdl:message>
+   
+   <wsdl:message name="inicio_rutaRequest">
+      <wsdl:part name="key" type="xsd:string"></wsdl:part>
+      <wsdl:part name="sv600" type="xsd:int"></wsdl:part>
+      <wsdl:part name="porcentaje_tanque" type="xsd:int"></wsdl:part>
+      <wsdl:part name="porcentaje_tanque_carburacion" type="xsd:int"></wsdl:part>
+      <wsdl:part name="odometro" type="xsd:int"></wsdl:part>
+      <wsdl:part name="horometro" type="xsd:int"></wsdl:part>
+   </wsdl:message>
+   <wsdl:message name="inicio_rutaResponse">
+      <wsdl:part name="result" type="xsd:string"></wsdl:part>
+   </wsdl:message>
+   
+   <wsdl:message name="solicitar_servicioRequest">
+      <wsdl:part name="key" type="xsd:string"></wsdl:part>
+      <wsdl:part name="sv600" type="xsd:int"></wsdl:part>
+   </wsdl:message>
+   <wsdl:message name="solicitar_servicioResponse">
+      <wsdl:part name="result" type="xsd:string"></wsdl:part>
+   </wsdl:message>
+   
+   <wsdl:message name="no_surtidoRequest">
+      <wsdl:part name="key" type="xsd:string"></wsdl:part>
+      <wsdl:part name="sv600" type="xsd:int"></wsdl:part>
+      <wsdl:part name="numero_control" type="xsd:int"></wsdl:part>
+      <wsdl:part name="motivo" type="xsd:int"></wsdl:part>
+      <wsdl:part name="porcentaje_tanque" type="xsd:int"></wsdl:part>
+      <wsdl:part name="fecha_compromiso" type="xsd:date"></wsdl:part>
+   </wsdl:message>
+   <wsdl:message name="no_surtidoResponse">
+      <wsdl:part name="result" type="xsd:string"></wsdl:part>
+   </wsdl:message>
+   
+   <wsdl:message name="realizar_surtidoRequest">
+      <wsdl:part name="key" type="xsd:string"></wsdl:part>
+      <wsdl:part name="sv600" type="xsd:int"></wsdl:part>
+      <wsdl:part name="numero_control" type="xsd:int"></wsdl:part>
+      <wsdl:part name="numero_servicio" type="xsd:int"></wsdl:part>
+      <wsdl:part name="litros_surtidos" type="xsd:double"></wsdl:part>
+      <wsdl:part name="importe_gas" type="xsd:double"></wsdl:part>
+      <wsdl:part name="importe_aditivo" type="xsd:double"></wsdl:part>
+      <wsdl:part name="importe_descuento" type="xsd:double"></wsdl:part>
+      <wsdl:part name="tipo_pago_id" type="xsd:int"></wsdl:part>
+      <wsdl:part name="hora_inicio" type="xsd:date"></wsdl:part>
+      <wsdl:part name="hora_final" type="xsd:date"></wsdl:part>
+      <wsdl:part name="porcentaje_tanque_cliente" type="xsd:int"></wsdl:part>
+      <wsdl:part name="fecha_compromiso" type="xsd:date"></wsdl:part>
+      <wsdl:part name="porcentaje_tanque" type="xsd:int"></wsdl:part>
+      <wsdl:part name="porcentaje_tanque_carburacion" type="xsd:int"></wsdl:part>
+      <wsdl:part name="puntos_ganados" type="xsd:int"></wsdl:part>
+      <wsdl:part name="puntos_oto_ganados" type="xsd:int"></wsdl:part>
+      <wsdl:part name="tipo_venta_id" type="xsd:string"></wsdl:part>
+      <wsdl:part name="numero_de_nota" type="xsd:int"></wsdl:part>
+      <wsdl:part name="capacidad_tanque_cliente" type="xsd:int"></wsdl:part>
+      <wsdl:part name="alarma_ra" type="xsd:int"></wsdl:part>
+      <wsdl:part name="constante_calibracion" type="xsd:string"></wsdl:part>
+   </wsdl:message>
+   <wsdl:message name="realizar_surtidoResponse">
+      <wsdl:part name="result" type="xsd:string"></wsdl:part>
+   </wsdl:message>
+   
+   <wsdl:message name="arribo_domicilioRequest">
+      <wsdl:part name="key" type="xsd:string"></wsdl:part>
+      <wsdl:part name="sv600" type="xsd:int"></wsdl:part>
+      <wsdl:part name="numero_control" type="xsd:int"></wsdl:part>
+      <wsdl:part name="odometro" type="xsd:int"></wsdl:part>
+   </wsdl:message>
+   <wsdl:message name="arribo_domicilioResponse">
+      <wsdl:part name="result" type="xsd:string"></wsdl:part>
+   </wsdl:message>
+   
+   <wsdl:message name="fooRequest">
+      <wsdl:part name="key" type="xsd:string"></wsdl:part>
+   </wsdl:message>
+   <wsdl:message name="fooResponse">
+      <wsdl:part name="result" type="xsd:string"></wsdl:part>
+   </wsdl:message>
+   
+   
+   <wsdl:message name="CFCInvocationException">
+      <wsdl:part name="fault" type="tns1:CFCInvocationException"></wsdl:part>
+   </wsdl:message>
+   
+   <wsdl:message name="ArrayOfArrayOf_xsd_anyType">
+      <wsdl:part name="fault" type="ArrayOfArrayOf_xsd_anyType"></wsdl:part>
+   </wsdl:message>
+
+   <wsdl:portType name="Portal_desa">
+      <wsdl:operation name="login" parameterOrder="key usuario password sv600">
+         <wsdl:input message="impl:loginRequest" name="loginRequest"></wsdl:input>
+         <wsdl:output message="impl:loginResponse" name="loginResponse"></wsdl:output>
+         <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"></wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="logout" parameterOrder="key usuario sv600">
+         <wsdl:input message="impl:logoutRequest" name="logoutRequest"></wsdl:input>
+         <wsdl:output message="impl:logoutResponse" name="logoutResponse"></wsdl:output>
+         <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"></wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="asigna_valores" parameterOrder="key sv600">
+         <wsdl:input message="impl:asigna_valoresRequest" name="asigna_valoresRequest"></wsdl:input>
+         <wsdl:output message="impl:asigna_valoresResponse" name="asigna_valoresResponse"></wsdl:output>
+         <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"></wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="posicion" parameterOrder="key sv600">
+         <wsdl:input message="impl:posicionRequest" name="posicionRequest"></wsdl:input>
+         <wsdl:output message="impl:posicionResponse" name="posicionResponse"></wsdl:output>
+         <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"></wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="tabla_puntos" parameterOrder="key">
+         <wsdl:input message="impl:tabla_puntosRequest" name="tabla_puntosRequest"></wsdl:input>
+         <wsdl:output message="impl:tabla_puntosResponse" name="tabla_puntosResponse"></wsdl:output>
+         <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"></wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="tabla_puntos_oro" parameterOrder="key">
+         <wsdl:input message="impl:tabla_puntos_oroRequest" name="tabla_puntos_oroRequest"></wsdl:input>
+         <wsdl:output message="impl:tabla_puntos_oroResponse" name="tabla_puntos_oroResponse"></wsdl:output>
+         <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"></wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="tabla_pagofacil" parameterOrder="key">
+         <wsdl:input message="impl:tabla_pagofacilRequest" name="tabla_pagofacilRequest"></wsdl:input>
+         <wsdl:output message="impl:tabla_pagofacilResponse" name="tabla_pagofacilResponse"></wsdl:output>
+         <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"></wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="inicio_ruta" parameterOrder="key">
+         <wsdl:input message="impl:inicio_rutaRequest" name="inicio_rutaRequest"></wsdl:input>
+         <wsdl:output message="impl:inicio_rutaResponse" name="inicio_rutaResponse"></wsdl:output>
+         <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"></wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="solicitar_servicio" parameterOrder="key">
+         <wsdl:input message="impl:solicitar_servicioRequest" name="solicitar_servicioRequest"></wsdl:input>
+         <wsdl:output message="impl:solicitar_servicioResponse" name="solicitar_servicioResponse"></wsdl:output>
+         <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"></wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="no_surtido" parameterOrder="key">
+         <wsdl:input message="impl:no_surtidoRequest" name="no_surtidoRequest"></wsdl:input>
+         <wsdl:output message="impl:no_surtidoResponse" name="no_surtidoResponse"></wsdl:output>
+         <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"></wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="realizar_surtido" parameterOrder="key">
+         <wsdl:input message="impl:realizar_surtidoRequest" name="realizar_surtidoRequest"></wsdl:input>
+         <wsdl:output message="impl:realizar_surtidoResponse" name="realizar_surtidoResponse"></wsdl:output>
+         <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"></wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="arribo_domicilio" parameterOrder="key">
+         <wsdl:input message="impl:arribo_domicilioRequest" name="arribo_domicilioRequest"></wsdl:input>
+         <wsdl:output message="impl:arribo_domicilioResponse" name="arribo_domicilioResponse"></wsdl:output>
+         <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"></wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="foo" parameterOrder="key">
+         <wsdl:input message="impl:fooRequest" name="fooRequest"></wsdl:input>
+         <wsdl:output message="impl:fooResponse" name="fooResponse"></wsdl:output>
+         <wsdl:fault message="impl:CFCInvocationException" name="CFCInvocationException"></wsdl:fault>
+      </wsdl:operation>
+   </wsdl:portType>
+
+   <wsdl:binding name="portal_desa.cfcSoapBinding" type="impl:Portal_desa">
+      <wsdlsoap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+      
+      <wsdl:operation name="login">
+         <wsdlsoap:operation soapAction=""/>
+         <wsdl:input name="loginRequest">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:input>
+         <wsdl:output name="loginResponse">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:output>
+         <wsdl:fault name="CFCInvocationException">
+            <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="logout">
+         <wsdlsoap:operation soapAction=""/>
+         <wsdl:input name="logoutRequest">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:input>
+         <wsdl:output name="logoutResponse">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:output>
+         <wsdl:fault name="CFCInvocationException">
+            <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="asigna_valores">
+         <wsdlsoap:operation soapAction=""/>
+         <wsdl:input name="asigna_valoresRequest">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:input>
+         <wsdl:output name="asigna_valoresResponse">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:output>
+         <wsdl:fault name="CFCInvocationException">
+            <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="posicion">
+         <wsdlsoap:operation soapAction=""/>
+         <wsdl:input name="posicionRequest">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:input>
+         <wsdl:output name="posicionResponse">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:output>
+         <wsdl:fault name="CFCInvocationException">
+            <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="tabla_puntos">
+         <wsdlsoap:operation soapAction=""/>
+         <wsdl:input name="tabla_puntosRequest">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:input>
+         <wsdl:output name="tabla_puntosResponse">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:output>
+         <wsdl:fault name="CFCInvocationException">
+            <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="tabla_puntos_oro">
+         <wsdlsoap:operation soapAction=""/>
+         <wsdl:input name="tabla_puntos_oroRequest">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:input>
+         <wsdl:output name="tabla_puntos_oroResponse">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:output>
+         <wsdl:fault name="CFCInvocationException">
+            <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="tabla_pagofacil">
+         <wsdlsoap:operation soapAction=""/>
+         <wsdl:input name="tabla_pagofacilRequest">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:input>
+         <wsdl:output name="tabla_pagofacilResponse">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:output>
+         <wsdl:fault name="CFCInvocationException">
+            <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="inicio_ruta">
+         <wsdlsoap:operation soapAction=""/>
+         <wsdl:input name="inicio_rutaRequest">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:input>
+         <wsdl:output name="inicio_rutaResponse">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:output>
+         <wsdl:fault name="CFCInvocationException">
+            <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="solicitar_servicio">
+         <wsdlsoap:operation soapAction=""/>
+         <wsdl:input name="solicitar_servicioRequest">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:input>
+         <wsdl:output name="solicitar_servicioResponse">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:output>
+         <wsdl:fault name="CFCInvocationException">
+            <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="no_surtido">
+         <wsdlsoap:operation soapAction=""/>
+         <wsdl:input name="no_surtidoRequest">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:input>
+         <wsdl:output name="no_surtidoResponse">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:output>
+         <wsdl:fault name="CFCInvocationException">
+            <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="realizar_surtido">
+         <wsdlsoap:operation soapAction=""/>
+         <wsdl:input name="realizar_surtidoRequest">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:input>
+         <wsdl:output name="realizar_surtidoResponse">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:output>
+         <wsdl:fault name="CFCInvocationException">
+            <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="arribo_domicilio">
+         <wsdlsoap:operation soapAction=""/>
+         <wsdl:input name="arribo_domicilioRequest">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:input>
+         <wsdl:output name="arribo_domicilioResponse">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:output>
+         <wsdl:fault name="CFCInvocationException">
+            <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:fault>
+      </wsdl:operation>
+      
+      <wsdl:operation name="foo">
+         <wsdlsoap:operation soapAction=""/>
+         <wsdl:input name="fooRequest">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:input>
+         <wsdl:output name="fooResponse">
+            <wsdlsoap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:output>
+         <wsdl:fault name="CFCInvocationException">
+            <wsdlsoap:fault encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" name="CFCInvocationException" namespace="http://ws.internet.wwwroot" use="encoded"/>
+         </wsdl:fault>
+      </wsdl:operation>
+   </wsdl:binding>
+
+   <wsdl:service name="Portal_desaService">
+      <wsdl:port binding="impl:portal_desa.cfcSoapBinding" name="portal_desa.cfc">
+         <wsdlsoap:address location="http://appgasera.solemti.net/messages/soap_service"/>
+      </wsdl:port>
+   </wsdl:service>
+</wsdl:definitions>

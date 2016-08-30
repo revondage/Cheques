@@ -1,0 +1,131 @@
+{
+    "type": "Ext.container.Viewport",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|initialView": true,
+        "designer|userAlias": "myviewport",
+        "designer|userClassName": "MyViewport"
+    },
+    "name": "MyViewport",
+    "designerId": "e657d9d8-53e1-4726-971a-91739d4a72b3",
+    "viewControllerInstanceId": "07819d3f-2418-4443-adcd-a38530c7de09",
+    "viewModelInstanceId": "c1a662cd-8240-4cb0-9000-ab1d9d5ffa4b",
+    "cn": [
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Cheques"
+            },
+            "name": "MyPanel",
+            "designerId": "e0e66f95-bfec-46d1-9a25-a442d42ad40c",
+            "cn": [
+                {
+                    "type": "Ext.button.Button",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|displayName": null,
+                        "id": "menuConfig",
+                        "text": "Imprimir Cheques"
+                    },
+                    "name": "MyButton",
+                    "designerId": "c3e95bbc-aadb-4ec1-a571-1e722a0a26f0",
+                    "cn": [
+                        {
+                            "type": "Ext.menu.Menu",
+                            "reference": {
+                                "name": "menu",
+                                "type": "object"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "designer|displayName": null,
+                                "width": 160
+                            },
+                            "name": "MyMenu",
+                            "designerId": "ee253266-9914-4bdd-a80e-c4b338ba27c6",
+                            "cn": [
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "designer|displayName": "impCheque",
+                                        "id": "impCheque",
+                                        "text": "Imprimir Cheques"
+                                    },
+                                    "name": "MyMenuItem",
+                                    "designerId": "aa9c9baf-dd69-4722-a1e8-f6e086ba9d05",
+                                    "cn": [
+                                        {
+                                            "type": "viewcontrollereventbinding",
+                                            "reference": {
+                                                "name": "listeners",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "fn": "onMenuitem1Click",
+                                                "implHandler": [
+                                                    "Ext._nombrealias=\"imprimirCheques\";",
+                                                    "// Ext.getStore('store'+Ext._nombrealias).load();",
+                                                    "// Ext.getStore('store'+Ext._nombrealias).clearFilter();",
+                                                    "Ext.widget('submenu'+Ext._nombrealias).show();"
+                                                ],
+                                                "name": "click",
+                                                "scope": "me"
+                                            },
+                                            "name": "onMenuitem1Click",
+                                            "designerId": "2207a9ce-752e-47bb-af15-57a3f1097b36"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Menu Item"
+                                    },
+                                    "name": "MyMenuItem1",
+                                    "designerId": "bc2dfd0f-9ce6-42a4-a669-b58addac2e17"
+                                },
+                                {
+                                    "type": "Ext.menu.Item",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "text": "Menu Item"
+                                    },
+                                    "name": "MyMenuItem2",
+                                    "designerId": "2ac3624f-2f64-4322-a940-9d844daf4af4"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,421 @@
+{
+    "type": "Ext.window.Window",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "autoShow": true,
+        "bodyPadding": null,
+        "container|align": "stretch",
+        "designer|userAlias": "configCheques",
+        "designer|userClassName": "configCheques",
+        "draggable": false,
+        "height": 161,
+        "id": "configCheques",
+        "layout": "vbox",
+        "modal": true,
+        "monitorResize": true,
+        "resizable": [
+            "false"
+        ],
+        "title": "Imprimir Cheques",
+        "width": 415
+    },
+    "name": "submenuimprimirCheques1",
+    "designerId": "719ae57c-ddad-4bef-93a2-43ba12c1686d",
+    "viewControllerInstanceId": "62be1fdc-8176-44a9-89a9-0aadf6270fab",
+    "viewModelInstanceId": "116934a8-3658-451b-a8e3-6180a8d7ab83",
+    "cn": [
+        {
+            "type": "Ext.form.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "bodyPadding": 10,
+                "height": 155,
+                "itemId": "form",
+                "reference": "form",
+                "title": null,
+                "width": 410
+            },
+            "name": "MyForm",
+            "designerId": "abe85ff3-f732-4093-8de0-406dcdfd1922",
+            "cn": [
+                {
+                    "type": "Ext.container.Container",
+                    "reference": {
+                        "name": "items",
+                        "type": "array"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "flex": 1,
+                        "height": null,
+                        "layout": null,
+                        "width": null
+                    },
+                    "name": "MyContainer",
+                    "designerId": "cd084429-a4d5-4e6a-b391-e215c9046594",
+                    "cn": [
+                        {
+                            "type": "Ext.container.Container",
+                            "reference": {
+                                "name": "items",
+                                "type": "array"
+                            },
+                            "codeClass": null,
+                            "userConfig": {
+                                "container|align": "stretch",
+                                "layout": "hbox"
+                            },
+                            "name": "MyContainer2",
+                            "designerId": "de94f5ef-2a1c-4bc2-a66e-d8f16217527e",
+                            "cn": [
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "name": "MyContainer3",
+                                    "designerId": "27e5d6a9-2800-4ff1-9aba-2e4f8e59f7bf",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.form.field.ComboBox",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "displayField": "nombre",
+                                                "editable": false,
+                                                "fieldLabel": "Banco",
+                                                "id": "cmbBanco",
+                                                "name": "cmbBanco",
+                                                "store": "banco",
+                                                "value": null,
+                                                "valueField": "id",
+                                                "width": 276
+                                            },
+                                            "name": "MyComboBox",
+                                            "designerId": "e2d42162-3774-4ecc-959c-7377506aeb54",
+                                            "cn": [
+                                                {
+                                                    "type": "viewcontrollereventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onCmbBancoChange",
+                                                        "implHandler": [
+                                                            "if (newValue!==\"\" && newValue!==null){",
+                                                            "    Ext._combocheque = Ext.getCmp('cmbBanco').getValue();",
+                                                            "//     Ext.Ajax.request({",
+                                                            "//         method: 'GET',",
+                                                            "//         url: 'api/Cheque/configCheque',",
+                                                            "//         params: {id_banco: Ext._combocheque}",
+                                                            "//     });",
+                                                            "    store.load({params: {id_banco:Ext._combocheque}});",
+                                                            "    Ext.getStore('cheque_ver').load({params:{'id_banco':Ext._combocheque}});",
+                                                            "}",
+                                                            "",
+                                                            "",
+                                                            "",
+                                                            "",
+                                                            "// Ext._combocheque = Ext.getCmp('cmbBanco').getValue();",
+                                                            "",
+                                                            "// Ext.Ajax.request({",
+                                                            "//     method: 'GET',",
+                                                            "//     url: 'api/Cheque/configCheque',",
+                                                            "//     params: {id_banco: Ext._combocheque},",
+                                                            "//     success: function(response){",
+                                                            "//         var res = Ext.JSON.decode(response.responseText);",
+                                                            "//         localStorage.setItem('id_banco', Ext._combocheque);",
+                                                            "//         if(Ext.isEmpty(res.data)) {",
+                                                            "//             Ext.Msg.show({",
+                                                            "//                 title:'Inicio de sesión incorrecta',",
+                                                            "//                 message: 'Usuario y/o contraseña no válidos',",
+                                                            "//                 buttons: Ext.Msg.OK,",
+                                                            "//                 icon: Ext.Msg.ERROR,",
+                                                            "//                 closable: false,",
+                                                            "//                 draggable: false,",
+                                                            "//             });",
+                                                            "//         } else {",
+                                                            "            //                     Ext.getCmp('login').destroy();",
+                                                            "            //                     Ext.create('control.view.mainview', {}).show();",
+                                                            "//             Ext.widget('ventanaPrincipal').show();",
+                                                            "//             Ext.getCmp('inicioSesion').destroy();",
+                                                            "//         }",
+                                                            "//     }",
+                                                            "// });",
+                                                            "",
+                                                            "",
+                                                            "",
+                                                            "",
+                                                            "console.log(Ext._combocheque);"
+                                                        ],
+                                                        "name": "change",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onCmbBancoChange",
+                                                    "designerId": "7dc6f34c-09f6-4f00-ae94-a91e40d55aab"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.form.field.ComboBox",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "displayField": "version",
+                                                "editable": false,
+                                                "fieldLabel": "Version Cheque",
+                                                "id": "cmbCheque",
+                                                "name": "cmbCheque",
+                                                "queryMode": null,
+                                                "store": "cheque_ver",
+                                                "value": null,
+                                                "valueField": "id"
+                                            },
+                                            "name": "MyComboBox3",
+                                            "designerId": "44f5acaa-3fa7-4c5a-bf05-d7218eb40fb9"
+                                        },
+                                        {
+                                            "type": "Ext.form.field.ComboBox",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "displayField": "nombre",
+                                                "editable": false,
+                                                "fieldLabel": "Impresora",
+                                                "hidden": true,
+                                                "id": "cmbImpresora",
+                                                "name": "cmbImpresora",
+                                                "store": "impresora",
+                                                "value": null,
+                                                "valueField": "id"
+                                            },
+                                            "name": "MyComboBox4",
+                                            "designerId": "f77fca5e-67a8-454e-840f-93625dcee6e0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.toolbar.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "flex": null,
+                                        "height": null,
+                                        "layout|flex": null,
+                                        "width": 12
+                                    },
+                                    "name": "MySpacer1",
+                                    "designerId": "3b1c09c8-0c6a-4aba-a61c-97dfb43cf228"
+                                },
+                                {
+                                    "type": "Ext.container.Container",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "container|align": "stretch",
+                                        "layout": "vbox",
+                                        "layout|flex": 1,
+                                        "margin": null,
+                                        "width": null
+                                    },
+                                    "name": "MyContainer1",
+                                    "designerId": "b5efef97-283c-445d-852a-3362c94e4344",
+                                    "cn": [
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "flex": 1,
+                                                "layout|flex": null,
+                                                "margin": null,
+                                                "text": "ACEPTAR"
+                                            },
+                                            "name": "MyButton1",
+                                            "designerId": "c016f706-6f6f-4647-9e5e-4f3e4ff34ceb",
+                                            "cn": [
+                                                {
+                                                    "type": "viewcontrollereventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onButtonClick",
+                                                        "implHandler": [
+                                                            "Ext._cmbCheque = Ext.getCmp('cmbCheque').getValue();",
+                                                            "",
+                                                            "switch (Ext._cmbCheque){",
+                                                            "    case 'Otro':",
+                                                            "        Ext._lx = '0'; Ext._ly = '0';",
+                                                            "        Ext._fx = '0'; Ext._fy = '0';",
+                                                            "        Ext._cx = '0'; Ext._cy = '0';",
+                                                            "        Ext._nx = '0'; Ext._ny = '0';",
+                                                            "        Ext._mx = '0'; Ext._my = '0';",
+                                                            "    break;",
+                                                            "",
+                                                            "    default:",
+                                                            "        Ext._lx = '148'; Ext._ly = '88';//89.8",
+                                                            "        Ext._fx = '229'; Ext._fy = '82';//83.3",
+                                                            "        Ext._cx = '250'; Ext._cy = '95';//97.7",
+                                                            "        Ext._nx = '125'; Ext._ny = '96';//97.7",
+                                                            "        Ext._mx = '125'; Ext._my = '104';//105",
+                                                            "",
+                                                            "}",
+                                                            "",
+                                                            "",
+                                                            "// Ext._loginusr = Ext.getCmp('loginusr').getValue();",
+                                                            "// Ext._loginpw = Ext.getCmp('loginpw').getValue();",
+                                                            "",
+                                                            "Ext.widget('imprimirCheques').show();",
+                                                            "Ext.getCmp('configCheques').destroy();"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onButtonClick",
+                                                    "designerId": "68ed77b6-9e0a-4019-a3e0-841b71efe77c"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.toolbar.Spacer",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "flex": null,
+                                                "height": 12,
+                                                "layout|flex": null,
+                                                "width": null
+                                            },
+                                            "name": "MySpacer",
+                                            "designerId": "3fc74c41-5202-4da1-a553-32550e463171"
+                                        },
+                                        {
+                                            "type": "Ext.button.Button",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "flex": 1,
+                                                "layout|flex": null,
+                                                "text": "CANCELAR"
+                                            },
+                                            "name": "MyButton",
+                                            "designerId": "77d420f8-930c-470c-b011-7ceb15028352",
+                                            "cn": [
+                                                {
+                                                    "type": "viewcontrollereventbinding",
+                                                    "reference": {
+                                                        "name": "listeners",
+                                                        "type": "array"
+                                                    },
+                                                    "codeClass": null,
+                                                    "userConfig": {
+                                                        "fn": "onButtonClick1",
+                                                        "implHandler": [
+                                                            "Ext.widget('imprimirCheques').show();",
+                                                            "Ext.getCmp('configCheques').destroy();"
+                                                        ],
+                                                        "name": "click",
+                                                        "scope": "me"
+                                                    },
+                                                    "name": "onButtonClick1",
+                                                    "designerId": "d77b2db5-93b3-4716-9c01-59bbb03fe565"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "Ext.toolbar.Spacer",
+                                            "reference": {
+                                                "name": "items",
+                                                "type": "array"
+                                            },
+                                            "codeClass": null,
+                                            "userConfig": {
+                                                "flex": null,
+                                                "height": null,
+                                                "layout|flex": null,
+                                                "width": 12
+                                            },
+                                            "name": "MySpacer2",
+                                            "designerId": "d884a295-2a2f-4976-a443-05f349422810"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Ext.toolbar.Spacer",
+                                    "reference": {
+                                        "name": "items",
+                                        "type": "array"
+                                    },
+                                    "codeClass": null,
+                                    "userConfig": {
+                                        "flex": null,
+                                        "height": null,
+                                        "layout|flex": null,
+                                        "width": 12
+                                    },
+                                    "name": "MySpacer3",
+                                    "designerId": "eb56a9c6-90ad-49b3-ac25-b2bce166498a"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Ext.panel.Panel",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|displayName": "panelCheque",
+                "hidden": true,
+                "id": "panelCheque1",
+                "title": null
+            },
+            "name": "MyPanel1",
+            "designerId": "756889d7-788f-4910-8820-f5be26ebd1cd"
+        }
+    ]
+}

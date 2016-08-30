@@ -20,45 +20,8 @@ Ext.define('Cheques.view.submenuimprimirChequesViewController2', {
     onCmbBancoChange: function(field, newValue, oldValue, eOpts) {
         if (newValue!=="" && newValue!==null){
             Ext._combocheque = Ext.getCmp('cmbBanco').getValue();
-            //     Ext.Ajax.request({
-            //         method: 'GET',
-            //         url: 'api/Cheque/configCheque',
-            //         params: {id_banco: Ext._combocheque}
-            //     });
+            Ext.getStore('cheque_ver').load({params:{'id_banco':Ext._combocheque}});
         }
-
-
-
-
-        // Ext._combocheque = Ext.getCmp('cmbBanco').getValue();
-
-        // Ext.Ajax.request({
-        //     method: 'GET',
-        //     url: 'api/Cheque/configCheque',
-        //     params: {id_banco: Ext._combocheque},
-        //     success: function(response){
-        //         var res = Ext.JSON.decode(response.responseText);
-        //         localStorage.setItem('id_banco', Ext._combocheque);
-        //         if(Ext.isEmpty(res.data)) {
-        //             Ext.Msg.show({
-        //                 title:'Inicio de sesión incorrecta',
-        //                 message: 'Usuario y/o contraseña no válidos',
-        //                 buttons: Ext.Msg.OK,
-        //                 icon: Ext.Msg.ERROR,
-        //                 closable: false,
-        //                 draggable: false,
-        //             });
-        //         } else {
-        //                     Ext.getCmp('login').destroy();
-        //                     Ext.create('control.view.mainview', {}).show();
-        //             Ext.widget('ventanaPrincipal').show();
-        //             Ext.getCmp('inicioSesion').destroy();
-        //         }
-        //     }
-        // });
-
-
-
 
         console.log(Ext._combocheque);
     },

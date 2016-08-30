@@ -80,7 +80,7 @@ Ext.define('Cheques.store.cheque_ver', {
                                 icon: Ext.MessageBox.info,
                                 buttons: Ext.Msg.OK
                             });
-        store.load({params: {id_banco:Ext._combocheque}});
+        // store.load({params: {id_banco:Ext._combocheque}});
     }
 
 });
